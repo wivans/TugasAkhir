@@ -1,0 +1,4315 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49">
+    <Prefix name="" IRI="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Bahan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Buah"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FoodOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kemasan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lokasi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Makanan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Minuman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rasa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DiAsap"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DiBakar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DiCampur"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DiGoreng"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DiKemas"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DiKemas_Buah"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DiKemas_Minuman"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DiKukus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DiPanggang"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DiRebus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DiSeduh"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DiTumis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Memiliki_Rasa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Memiliki_Rasa_Buah"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Memiliki_Rasa_Minuman"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Microwave"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Jumlah_Porsi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Kadaluarsa_Dalam_Hari"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Temperatur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Abon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Air"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Air_Mineral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aluminium_Foil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arem_Arem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ayam_Bakar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ayam_Goreng"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ayam_Panggang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Baking_Powder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bawang_Goreng"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bayam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beras"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beras_Ketan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bihun"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bihun_Goreng"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bistik"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Botol_Kaca"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Botol_Plastik"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Brokoli"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bubuk_Kaldu_Ayam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bubuk_Kopi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bubuk_Teh"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bubur_Ayam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bumbu_Kacang_Sate_Ayam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bumbu_Lotek"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bunga_Kol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Burger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cabai_Hijau"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cabai_Merah"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cabai_Rawit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Capcay"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cengkeh"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Coklat_Batang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Coklat_Bubuk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daging_Ayam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daging_Ikan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daging_Kambing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daging_Sapi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daun_Bawang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daun_Jati"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daun_Jeruk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daun_Kemangi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daun_Melinjo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daun_Pandan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daun_Pisang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daun_Salam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daun_Seledri"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Garam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gelas_Plastik"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gudeg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gula_Jawa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gula_Merah"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gula_Pasir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gurih"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ikan_Goreng"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Indomie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Indomie_Goreng"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Indomie_Rebus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jahe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jalan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jamur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jamur_Crispy_Goreng"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jeruk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jeruk_Lemon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jeruk_Nipis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jinten"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kabupaten"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kacang_Panjang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kacang_Tanah"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kaldu_Ayam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kangkung"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kapulaga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kari_Ayam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kayu_Manis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kecamatan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kecap_Asin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kecap_Inggris"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kecap_Manis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Keju"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kelapa_Parut"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kelurahan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kemiri"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kencur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kentang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kertas_Minyak_Makanan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kerupuk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kerupuk_Udang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ketumbar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kopi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kotak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kue_Brownies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kue_Pancong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kuning_Telur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kunyit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Labu_Siam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Laos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lemper"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lengkuas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lontong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lotek"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MSG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Madu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Martabak_Goreng"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mayonaise"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mentega"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mika"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Minyak_Goreng"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Minyak_Sayur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nangka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nangka_Muda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nasi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nasi_Goreng"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pahit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pala_Bubuk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pedas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pepaya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Piring"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pisang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Plastik"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Plastik_Kemasan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Putih_Telur_Ayam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Risoles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Royco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Salak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sambal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Santan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sate_Ayam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sate_Kambing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Saus_Bistik"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Saus_Inggris"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Saus_Sambal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Saus_Tiram"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sawi_Putih"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sayur_Tempe_Tahu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Semangka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Serai"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sirup"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sosis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sterofoam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Susu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Susu_Bubuk_Vanilla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Susu_Sapi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tahu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tahu_Bakso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tahu_Goreng"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tauge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tawar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Teh"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Telur_Ayam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Telur_Ayam_Rebus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Telur_Bebek"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Telur_Dadar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tempe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tempe_Goreng"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tepung_Beras"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tepung_Maizena"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tepung_Panir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tepung_Tapioka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tepung_Terigu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Terasi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Terong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Timun"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tomat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tumis_Kacang_Panjang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tumis_Tempe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Udang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Udang_Bakar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Udang_Balado"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wijen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wortel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lada/merica"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Bahan"/>
+        <Class IRI="#FoodOntology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buah"/>
+        <Class IRI="#FoodOntology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kemasan"/>
+        <Class IRI="#FoodOntology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lokasi"/>
+        <Class IRI="#FoodOntology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Makanan"/>
+        <Class IRI="#FoodOntology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Minuman"/>
+        <Class IRI="#FoodOntology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rasa"/>
+        <Class IRI="#FoodOntology"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Bahan"/>
+        <Class IRI="#Makanan"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Abon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Air"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Minuman"/>
+        <NamedIndividual IRI="#Air_Mineral"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kemasan"/>
+        <NamedIndividual IRI="#Aluminium_Foil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Arem_Arem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rasa"/>
+        <NamedIndividual IRI="#Asam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rasa"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Ayam_Bakar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Ayam_Goreng"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Ayam_Panggang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Baking_Powder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Bawang_Goreng"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Bayam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Beras"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Beras_Ketan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Bihun"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Bihun_Goreng"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Bistik"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kemasan"/>
+        <NamedIndividual IRI="#Botol_Kaca"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kemasan"/>
+        <NamedIndividual IRI="#Botol_Plastik"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Brokoli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Bubuk_Kaldu_Ayam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Bubuk_Kopi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Bubuk_Teh"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Bubur_Ayam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Bumbu_Kacang_Sate_Ayam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Bumbu_Lotek"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Bunga_Kol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Burger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Cabai_Hijau"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Cabai_Merah"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Cabai_Rawit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Capcay"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Cengkeh"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Coklat_Batang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Coklat_Bubuk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Daging_Ayam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Daging_Ikan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Daging_Kambing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Daging_Sapi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Daun_Bawang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Daun_Jati"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Daun_Jeruk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Daun_Kemangi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Daun_Melinjo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Daun_Pandan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kemasan"/>
+        <NamedIndividual IRI="#Daun_Pisang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Daun_Salam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Daun_Seledri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Garam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kemasan"/>
+        <NamedIndividual IRI="#Gelas_Plastik"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Gudeg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Gula_Jawa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Gula_Merah"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Gula_Pasir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rasa"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Ikan_Goreng"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Indomie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Indomie_Goreng"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Indomie_Rebus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Jahe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lokasi"/>
+        <NamedIndividual IRI="#Jalan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Jamur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Jamur_Crispy_Goreng"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Buah"/>
+        <NamedIndividual IRI="#Jeruk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Jeruk_Lemon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Jeruk_Nipis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Jinten"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lokasi"/>
+        <NamedIndividual IRI="#Kabupaten"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Kacang_Panjang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Kacang_Tanah"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Kaldu_Ayam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Kangkung"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Kapulaga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Kari_Ayam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Kayu_Manis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lokasi"/>
+        <NamedIndividual IRI="#Kecamatan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Kecap_Asin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Kecap_Inggris"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Kecap_Manis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Keju"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Kelapa_Parut"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lokasi"/>
+        <NamedIndividual IRI="#Kelurahan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Kemiri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Kencur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Kentang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kemasan"/>
+        <NamedIndividual IRI="#Kertas_Minyak_Makanan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Kerupuk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Kerupuk_Udang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Ketumbar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Kol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Minuman"/>
+        <NamedIndividual IRI="#Kopi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kemasan"/>
+        <NamedIndividual IRI="#Kotak"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Kue_Brownies"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Kue_Pancong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Kuning_Telur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Kunyit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Labu_Siam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Laos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Lemper"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Lengkuas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Lontong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Lotek"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#MSG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Madu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rasa"/>
+        <NamedIndividual IRI="#Manis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Martabak_Goreng"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Mayonaise"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Mentega"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Mie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kemasan"/>
+        <NamedIndividual IRI="#Mika"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Minyak_Goreng"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Minyak_Sayur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Nangka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Nangka_Muda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Nasi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Nasi_Goreng"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rasa"/>
+        <NamedIndividual IRI="#Pahit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Pala_Bubuk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rasa"/>
+        <NamedIndividual IRI="#Pedas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Buah"/>
+        <NamedIndividual IRI="#Pepaya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kemasan"/>
+        <NamedIndividual IRI="#Piring"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Buah"/>
+        <NamedIndividual IRI="#Pisang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kemasan"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kemasan"/>
+        <NamedIndividual IRI="#Plastik_Kemasan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Putih_Telur_Ayam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Risoles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Royco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Buah"/>
+        <NamedIndividual IRI="#Salak"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Sambal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Santan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Sate_Ayam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Sate_Kambing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Saus_Bistik"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Saus_Inggris"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Saus_Sambal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Saus_Tiram"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Sawi_Putih"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Sayur_Tempe_Tahu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Buah"/>
+        <NamedIndividual IRI="#Semangka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Serai"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Minuman"/>
+        <NamedIndividual IRI="#Sirup"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Sosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kemasan"/>
+        <NamedIndividual IRI="#Sterofoam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Minuman"/>
+        <NamedIndividual IRI="#Susu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Susu_Bubuk_Vanilla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Susu_Sapi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Tahu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Tahu_Bakso"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Tahu_Goreng"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Tauge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rasa"/>
+        <NamedIndividual IRI="#Tawar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Minuman"/>
+        <NamedIndividual IRI="#Teh"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Telur_Ayam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Telur_Ayam_Rebus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Telur_Bebek"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Telur_Dadar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Tempe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Tempe_Goreng"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Tepung_Beras"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Tepung_Maizena"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Tepung_Panir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Tepung_Tapioka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Tepung_Terigu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Terasi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Terong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Timun"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Tomat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Tumis_Kacang_Panjang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Tumis_Tempe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Udang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Udang_Bakar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Makanan"/>
+        <NamedIndividual IRI="#Udang_Balado"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Wijen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Wortel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bahan"/>
+        <NamedIndividual IRI="#Lada/merica"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Abon"/>
+        <NamedIndividual IRI="#Plastik_Kemasan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Abon"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Air"/>
+        <NamedIndividual IRI="#Martabak_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Air"/>
+        <NamedIndividual IRI="#Gudeg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Air"/>
+        <NamedIndividual IRI="#Bubur_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Air"/>
+        <NamedIndividual IRI="#Sayur_Tempe_Tahu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Air"/>
+        <NamedIndividual IRI="#Tahu_Bakso"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiSeduh"/>
+        <NamedIndividual IRI="#Air"/>
+        <NamedIndividual IRI="#Kopi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiSeduh"/>
+        <NamedIndividual IRI="#Air"/>
+        <NamedIndividual IRI="#Teh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Air"/>
+        <NamedIndividual IRI="#Bumbu_Kacang_Sate_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Air"/>
+        <NamedIndividual IRI="#Capcay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Air"/>
+        <NamedIndividual IRI="#Saus_Bistik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Air"/>
+        <NamedIndividual IRI="#Tumis_Kacang_Panjang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Air"/>
+        <NamedIndividual IRI="#Tumis_Tempe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Minuman"/>
+        <NamedIndividual IRI="#Air_Mineral"/>
+        <NamedIndividual IRI="#Botol_Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Minuman"/>
+        <NamedIndividual IRI="#Air_Mineral"/>
+        <NamedIndividual IRI="#Gelas_Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Minuman"/>
+        <NamedIndividual IRI="#Air_Mineral"/>
+        <NamedIndividual IRI="#Tawar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Arem_Arem"/>
+        <NamedIndividual IRI="#Daun_Pisang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas"/>
+        <NamedIndividual IRI="#Ayam_Bakar"/>
+        <NamedIndividual IRI="#Plastik_Kemasan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Ayam_Bakar"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Ayam_Bakar"/>
+        <NamedIndividual IRI="#Sterofoam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Ayam_Bakar"/>
+        <NamedIndividual IRI="#Manis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Ayam_Goreng"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Ayam_Goreng"/>
+        <NamedIndividual IRI="#Plastik_Kemasan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Ayam_Goreng"/>
+        <NamedIndividual IRI="#Sterofoam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Ayam_Goreng"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Ayam_Goreng"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Ayam_Panggang"/>
+        <NamedIndividual IRI="#Aluminium_Foil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Ayam_Panggang"/>
+        <NamedIndividual IRI="#Plastik_Kemasan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Ayam_Panggang"/>
+        <NamedIndividual IRI="#Sterofoam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Ayam_Panggang"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Ayam_Panggang"/>
+        <NamedIndividual IRI="#Manis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Baking_Powder"/>
+        <NamedIndividual IRI="#Jamur_Crispy_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Baking_Powder"/>
+        <NamedIndividual IRI="#Kue_Brownies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Bawang_Goreng"/>
+        <NamedIndividual IRI="#Bubur_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Bawang_Goreng"/>
+        <NamedIndividual IRI="#Lotek"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+        <NamedIndividual IRI="#Ayam_Bakar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+        <NamedIndividual IRI="#Sate_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+        <NamedIndividual IRI="#Abon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+        <NamedIndividual IRI="#Martabak_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+        <NamedIndividual IRI="#Nasi_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+        <NamedIndividual IRI="#Arem_Arem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+        <NamedIndividual IRI="#Gudeg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+        <NamedIndividual IRI="#Lemper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+        <NamedIndividual IRI="#Kari_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+        <NamedIndividual IRI="#Sayur_Tempe_Tahu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+        <NamedIndividual IRI="#Bihun_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+        <NamedIndividual IRI="#Bumbu_Kacang_Sate_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+        <NamedIndividual IRI="#Saus_Bistik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+        <NamedIndividual IRI="#Tumis_Kacang_Panjang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+        <NamedIndividual IRI="#Tumis_Tempe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+        <NamedIndividual IRI="#Udang_Balado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+        <NamedIndividual IRI="#Sate_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Bawang_Merah"/>
+        <NamedIndividual IRI="#Sate_Kambing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Sate_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Sate_Kambing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Udang_Bakar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiCampur"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Bumbu_Lotek"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Abon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Martabak_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Nasi_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Arem_Arem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Gudeg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Kerupuk_Udang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Lemper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Ayam_Panggang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Kari_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Sayur_Tempe_Tahu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Tahu_Bakso"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Bihun_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Bumbu_Kacang_Sate_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Capcay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Saus_Bistik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Tumis_Kacang_Panjang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Tumis_Tempe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Bawang_Putih"/>
+        <NamedIndividual IRI="#Udang_Balado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiCampur"/>
+        <NamedIndividual IRI="#Bayam"/>
+        <NamedIndividual IRI="#Lotek"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Beras"/>
+        <NamedIndividual IRI="#Arem_Arem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Beras"/>
+        <NamedIndividual IRI="#Bubur_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Beras_Ketan"/>
+        <NamedIndividual IRI="#Lemper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Bihun"/>
+        <NamedIndividual IRI="#Bihun_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Bihun_Goreng"/>
+        <NamedIndividual IRI="#Kertas_Minyak_Makanan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Bihun_Goreng"/>
+        <NamedIndividual IRI="#Sterofoam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Bihun_Goreng"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Bihun_Goreng"/>
+        <NamedIndividual IRI="#Manis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Bistik"/>
+        <NamedIndividual IRI="#Plastik_Kemasan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Bistik"/>
+        <NamedIndividual IRI="#Sterofoam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Bistik"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Brokoli"/>
+        <NamedIndividual IRI="#Capcay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiSeduh"/>
+        <NamedIndividual IRI="#Bubuk_Kopi"/>
+        <NamedIndividual IRI="#Kopi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiSeduh"/>
+        <NamedIndividual IRI="#Bubuk_Teh"/>
+        <NamedIndividual IRI="#Teh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Bubur_Ayam"/>
+        <NamedIndividual IRI="#Sterofoam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Bubur_Ayam"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Bumbu_Kacang_Sate_Ayam"/>
+        <NamedIndividual IRI="#Sate_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Bumbu_Lotek"/>
+        <NamedIndividual IRI="#Lotek"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Burger"/>
+        <NamedIndividual IRI="#Sterofoam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Burger"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Burger"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Cabai_Hijau"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Cabai_Merah"/>
+        <NamedIndividual IRI="#Nasi_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Cabai_Merah"/>
+        <NamedIndividual IRI="#Sayur_Tempe_Tahu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Cabai_Merah"/>
+        <NamedIndividual IRI="#Bumbu_Kacang_Sate_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Cabai_Merah"/>
+        <NamedIndividual IRI="#Sambal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Cabai_Merah"/>
+        <NamedIndividual IRI="#Tumis_Kacang_Panjang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Cabai_Merah"/>
+        <NamedIndividual IRI="#Udang_Balado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Cabai_Rawit"/>
+        <NamedIndividual IRI="#Sambal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Cabai_Rawit"/>
+        <NamedIndividual IRI="#Udang_Balado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Cabai_Rawit"/>
+        <NamedIndividual IRI="#Sate_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Capcay"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Capcay"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Coklat_Batang"/>
+        <NamedIndividual IRI="#Kue_Brownies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Coklat_Bubuk"/>
+        <NamedIndividual IRI="#Kue_Brownies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Daging_Ayam"/>
+        <NamedIndividual IRI="#Ayam_Bakar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Daging_Ayam"/>
+        <NamedIndividual IRI="#Sate_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Daging_Ayam"/>
+        <NamedIndividual IRI="#Ayam_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Daging_Ayam"/>
+        <NamedIndividual IRI="#Nasi_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Daging_Ayam"/>
+        <NamedIndividual IRI="#Gudeg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Daging_Ayam"/>
+        <NamedIndividual IRI="#Lemper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Daging_Ayam"/>
+        <NamedIndividual IRI="#Ayam_Panggang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Daging_Ayam"/>
+        <NamedIndividual IRI="#Kari_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Daging_Ayam"/>
+        <NamedIndividual IRI="#Bubur_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Daging_Ikan"/>
+        <NamedIndividual IRI="#Ikan_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Daging_Kambing"/>
+        <NamedIndividual IRI="#Sate_Kambing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Daging_Sapi"/>
+        <NamedIndividual IRI="#Abon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Daging_Sapi"/>
+        <NamedIndividual IRI="#Martabak_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Daging_Sapi"/>
+        <NamedIndividual IRI="#Arem_Arem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Daging_Sapi"/>
+        <NamedIndividual IRI="#Tahu_Bakso"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Daging_Sapi"/>
+        <NamedIndividual IRI="#Bistik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Daun_Bawang"/>
+        <NamedIndividual IRI="#Martabak_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Daun_Bawang"/>
+        <NamedIndividual IRI="#Nasi_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Daun_Bawang"/>
+        <NamedIndividual IRI="#Bihun_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Daun_Bawang"/>
+        <NamedIndividual IRI="#Capcay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Daun_Bawang"/>
+        <NamedIndividual IRI="#Saus_Bistik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Daun_Bawang"/>
+        <NamedIndividual IRI="#Tumis_Tempe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Daun_Bawang"/>
+        <NamedIndividual IRI="#Bubur_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Daun_Jati"/>
+        <NamedIndividual IRI="#Gudeg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Daun_Jeruk"/>
+        <NamedIndividual IRI="#Abon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Daun_Jeruk"/>
+        <NamedIndividual IRI="#Ayam_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Daun_Jeruk"/>
+        <NamedIndividual IRI="#Arem_Arem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Daun_Jeruk"/>
+        <NamedIndividual IRI="#Ayam_Panggang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Daun_Melinjo"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Daun_Pandan"/>
+        <NamedIndividual IRI="#Lemper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Daun_Salam"/>
+        <NamedIndividual IRI="#Abon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Daun_Salam"/>
+        <NamedIndividual IRI="#Ayam_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Daun_Salam"/>
+        <NamedIndividual IRI="#Arem_Arem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Daun_Salam"/>
+        <NamedIndividual IRI="#Gudeg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Daun_Salam"/>
+        <NamedIndividual IRI="#Lemper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Daun_Salam"/>
+        <NamedIndividual IRI="#Ayam_Panggang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Daun_Salam"/>
+        <NamedIndividual IRI="#Kari_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Daun_Salam"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Daun_Salam"/>
+        <NamedIndividual IRI="#Tumis_Kacang_Panjang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Daun_Seledri"/>
+        <NamedIndividual IRI="#Bubur_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Ayam_Bakar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Udang_Bakar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Jamur_Crispy_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Martabak_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Nasi_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Risoles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Arem_Arem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Gudeg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Lemper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Ayam_Panggang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Kue_Brownies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Kue_Pancong"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Bubur_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Sayur_Tempe_Tahu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Tahu_Bakso"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Bistik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Bumbu_Kacang_Sate_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Capcay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Tumis_Kacang_Panjang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Tumis_Tempe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Garam"/>
+        <NamedIndividual IRI="#Udang_Balado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Gudeg"/>
+        <NamedIndividual IRI="#Kertas_Minyak_Makanan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Gudeg"/>
+        <NamedIndividual IRI="#Sterofoam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Gudeg"/>
+        <NamedIndividual IRI="#Manis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Gula_Merah"/>
+        <NamedIndividual IRI="#Abon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Gula_Merah"/>
+        <NamedIndividual IRI="#Gudeg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Gula_Merah"/>
+        <NamedIndividual IRI="#Udang_Balado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Gula_Pasir"/>
+        <NamedIndividual IRI="#Arem_Arem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Gula_Pasir"/>
+        <NamedIndividual IRI="#Kerupuk_Udang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Gula_Pasir"/>
+        <NamedIndividual IRI="#Lemper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Gula_Pasir"/>
+        <NamedIndividual IRI="#Kue_Brownies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Gula_Pasir"/>
+        <NamedIndividual IRI="#Kue_Pancong"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Gula_Pasir"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Gula_Pasir"/>
+        <NamedIndividual IRI="#Sayur_Tempe_Tahu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Gula_Pasir"/>
+        <NamedIndividual IRI="#Capcay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Gula_Pasir"/>
+        <NamedIndividual IRI="#Tumis_Kacang_Panjang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Ikan_Goreng"/>
+        <NamedIndividual IRI="#Plastik_Kemasan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Ikan_Goreng"/>
+        <NamedIndividual IRI="#Sterofoam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Ikan_Goreng"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Indomie"/>
+        <NamedIndividual IRI="#Indomie_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Indomie"/>
+        <NamedIndividual IRI="#Indomie_Rebus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Indomie_Goreng"/>
+        <NamedIndividual IRI="#Plastik_Kemasan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Indomie_Goreng"/>
+        <NamedIndividual IRI="#Sterofoam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Indomie_Goreng"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Indomie_Rebus"/>
+        <NamedIndividual IRI="#Kotak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Indomie_Rebus"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Indomie_Rebus"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Indomie_Rebus"/>
+        <NamedIndividual IRI="#Pedas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Jahe"/>
+        <NamedIndividual IRI="#Abon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Jahe"/>
+        <NamedIndividual IRI="#Ayam_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Jahe"/>
+        <NamedIndividual IRI="#Udang_Balado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Jamur"/>
+        <NamedIndividual IRI="#Jamur_Crispy_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Jamur_Crispy_Goreng"/>
+        <NamedIndividual IRI="#Kertas_Minyak_Makanan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Jamur_Crispy_Goreng"/>
+        <NamedIndividual IRI="#Sterofoam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Jamur_Crispy_Goreng"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Buah"/>
+        <NamedIndividual IRI="#Jeruk"/>
+        <NamedIndividual IRI="#Kotak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Buah"/>
+        <NamedIndividual IRI="#Jeruk"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Buah"/>
+        <NamedIndividual IRI="#Jeruk"/>
+        <NamedIndividual IRI="#Asam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Buah"/>
+        <NamedIndividual IRI="#Jeruk"/>
+        <NamedIndividual IRI="#Manis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Jeruk_Nipis"/>
+        <NamedIndividual IRI="#Udang_Bakar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Jeruk_Nipis"/>
+        <NamedIndividual IRI="#Udang_Balado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Jeruk_Nipis"/>
+        <NamedIndividual IRI="#Sate_Kambing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiCampur"/>
+        <NamedIndividual IRI="#Kacang_Panjang"/>
+        <NamedIndividual IRI="#Lotek"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Kacang_Panjang"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Kacang_Panjang"/>
+        <NamedIndividual IRI="#Tumis_Kacang_Panjang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Kacang_Panjang"/>
+        <NamedIndividual IRI="#Bistik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiCampur"/>
+        <NamedIndividual IRI="#Kacang_Tanah"/>
+        <NamedIndividual IRI="#Bumbu_Lotek"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Kacang_Tanah"/>
+        <NamedIndividual IRI="#Bumbu_Kacang_Sate_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Kaldu_Ayam"/>
+        <NamedIndividual IRI="#Bubur_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiCampur"/>
+        <NamedIndividual IRI="#Kangkung"/>
+        <NamedIndividual IRI="#Lotek"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Kari_Ayam"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Kari_Ayam"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Kari_Ayam"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Kayu_Manis"/>
+        <NamedIndividual IRI="#Bubur_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Kecap_Asin"/>
+        <NamedIndividual IRI="#Bubur_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Kecap_Inggris"/>
+        <NamedIndividual IRI="#Saus_Bistik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Kecap_Manis"/>
+        <NamedIndividual IRI="#Ayam_Bakar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Kecap_Manis"/>
+        <NamedIndividual IRI="#Sate_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Kecap_Manis"/>
+        <NamedIndividual IRI="#Sate_Kambing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Kecap_Manis"/>
+        <NamedIndividual IRI="#Udang_Bakar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Kecap_Manis"/>
+        <NamedIndividual IRI="#Nasi_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Kecap_Manis"/>
+        <NamedIndividual IRI="#Ayam_Panggang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Kecap_Manis"/>
+        <NamedIndividual IRI="#Bihun_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Kecap_Manis"/>
+        <NamedIndividual IRI="#Bumbu_Kacang_Sate_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Kecap_Manis"/>
+        <NamedIndividual IRI="#Saus_Bistik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Kecap_Manis"/>
+        <NamedIndividual IRI="#Tumis_Kacang_Panjang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Kecap_Manis"/>
+        <NamedIndividual IRI="#Tumis_Tempe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Kecap_Manis"/>
+        <NamedIndividual IRI="#Sate_Kambing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Kelapa_Parut"/>
+        <NamedIndividual IRI="#Kue_Pancong"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Kemiri"/>
+        <NamedIndividual IRI="#Arem_Arem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Kemiri"/>
+        <NamedIndividual IRI="#Gudeg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Kemiri"/>
+        <NamedIndividual IRI="#Lemper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Kemiri"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Kemiri"/>
+        <NamedIndividual IRI="#Bihun_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Kemiri"/>
+        <NamedIndividual IRI="#Bumbu_Kacang_Sate_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Kencur"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Kentang"/>
+        <NamedIndividual IRI="#Risoles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Kentang"/>
+        <NamedIndividual IRI="#Bistik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Kerupuk_Udang"/>
+        <NamedIndividual IRI="#Plastik_Kemasan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Kerupuk_Udang"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Ketumbar"/>
+        <NamedIndividual IRI="#Sate_Kambing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Ketumbar"/>
+        <NamedIndividual IRI="#Abon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Ketumbar"/>
+        <NamedIndividual IRI="#Ayam_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Ketumbar"/>
+        <NamedIndividual IRI="#Arem_Arem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Ketumbar"/>
+        <NamedIndividual IRI="#Gudeg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Ketumbar"/>
+        <NamedIndividual IRI="#Lemper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Ketumbar"/>
+        <NamedIndividual IRI="#Ayam_Panggang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Ketumbar"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiCampur"/>
+        <NamedIndividual IRI="#Kol"/>
+        <NamedIndividual IRI="#Lotek"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Kol"/>
+        <NamedIndividual IRI="#Arem_Arem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Kol"/>
+        <NamedIndividual IRI="#Bihun_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Kol"/>
+        <NamedIndividual IRI="#Capcay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Minuman"/>
+        <NamedIndividual IRI="#Kopi"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Minuman"/>
+        <NamedIndividual IRI="#Kopi"/>
+        <NamedIndividual IRI="#Manis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Minuman"/>
+        <NamedIndividual IRI="#Kopi"/>
+        <NamedIndividual IRI="#Pahit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Kue_Brownies"/>
+        <NamedIndividual IRI="#Kotak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Kue_Brownies"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Kue_Brownies"/>
+        <NamedIndividual IRI="#Manis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Kue_Pancong"/>
+        <NamedIndividual IRI="#Kertas_Minyak_Makanan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Kue_Pancong"/>
+        <NamedIndividual IRI="#Manis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Kunyit"/>
+        <NamedIndividual IRI="#Ayam_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Kunyit"/>
+        <NamedIndividual IRI="#Ayam_Panggang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiCampur"/>
+        <NamedIndividual IRI="#Labu_Siam"/>
+        <NamedIndividual IRI="#Lotek"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Labu_Siam"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Laos"/>
+        <NamedIndividual IRI="#Lemper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Lemper"/>
+        <NamedIndividual IRI="#Daun_Pisang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Lemper"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Lemper"/>
+        <NamedIndividual IRI="#Manis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Lengkuas"/>
+        <NamedIndividual IRI="#Abon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Lengkuas"/>
+        <NamedIndividual IRI="#Ayam_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Lengkuas"/>
+        <NamedIndividual IRI="#Gudeg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Lengkuas"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Lengkuas"/>
+        <NamedIndividual IRI="#Tumis_Kacang_Panjang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Lotek"/>
+        <NamedIndividual IRI="#Kertas_Minyak_Makanan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Lotek"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Lotek"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Lotek"/>
+        <NamedIndividual IRI="#Pedas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Martabak_Goreng"/>
+        <NamedIndividual IRI="#Kertas_Minyak_Makanan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Martabak_Goreng"/>
+        <NamedIndividual IRI="#Kotak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Martabak_Goreng"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Martabak_Goreng"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Mayonaise"/>
+        <NamedIndividual IRI="#Risoles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Mentega"/>
+        <NamedIndividual IRI="#Ayam_Bakar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Mentega"/>
+        <NamedIndividual IRI="#Udang_Bakar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Mentega"/>
+        <NamedIndividual IRI="#Kue_Brownies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Mentega"/>
+        <NamedIndividual IRI="#Kue_Pancong"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Mentega"/>
+        <NamedIndividual IRI="#Bistik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Mentega"/>
+        <NamedIndividual IRI="#Capcay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Mentega"/>
+        <NamedIndividual IRI="#Saus_Bistik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Minyak_Goreng"/>
+        <NamedIndividual IRI="#Abon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Minyak_Goreng"/>
+        <NamedIndividual IRI="#Ayam_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Minyak_Goreng"/>
+        <NamedIndividual IRI="#Ikan_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Minyak_Goreng"/>
+        <NamedIndividual IRI="#Jamur_Crispy_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Minyak_Goreng"/>
+        <NamedIndividual IRI="#Kerupuk_Udang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Minyak_Goreng"/>
+        <NamedIndividual IRI="#Martabak_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Minyak_Goreng"/>
+        <NamedIndividual IRI="#Nasi_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Minyak_Goreng"/>
+        <NamedIndividual IRI="#Risoles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Minyak_Goreng"/>
+        <NamedIndividual IRI="#Tahu_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Minyak_Goreng"/>
+        <NamedIndividual IRI="#Tempe_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Minyak_Goreng"/>
+        <NamedIndividual IRI="#Arem_Arem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Minyak_Goreng"/>
+        <NamedIndividual IRI="#Bumbu_Kacang_Sate_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Minyak_Goreng"/>
+        <NamedIndividual IRI="#Sambal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Minyak_Goreng"/>
+        <NamedIndividual IRI="#Tumis_Kacang_Panjang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Minyak_Goreng"/>
+        <NamedIndividual IRI="#Tumis_Tempe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Nangka_Muda"/>
+        <NamedIndividual IRI="#Gudeg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Nangka_Muda"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Nasi"/>
+        <NamedIndividual IRI="#Nasi_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Nasi_Goreng"/>
+        <NamedIndividual IRI="#Kertas_Minyak_Makanan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Nasi_Goreng"/>
+        <NamedIndividual IRI="#Sterofoam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Nasi_Goreng"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Nasi_Goreng"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Pala_Bubuk"/>
+        <NamedIndividual IRI="#Saus_Bistik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Buah"/>
+        <NamedIndividual IRI="#Pepaya"/>
+        <NamedIndividual IRI="#Kotak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Buah"/>
+        <NamedIndividual IRI="#Pepaya"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Buah"/>
+        <NamedIndividual IRI="#Pepaya"/>
+        <NamedIndividual IRI="#Manis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Buah"/>
+        <NamedIndividual IRI="#Pisang"/>
+        <NamedIndividual IRI="#Kotak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Buah"/>
+        <NamedIndividual IRI="#Pisang"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Buah"/>
+        <NamedIndividual IRI="#Pisang"/>
+        <NamedIndividual IRI="#Manis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Risoles"/>
+        <NamedIndividual IRI="#Kotak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Risoles"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Risoles"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Risoles"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Buah"/>
+        <NamedIndividual IRI="#Salak"/>
+        <NamedIndividual IRI="#Kotak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Buah"/>
+        <NamedIndividual IRI="#Salak"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Buah"/>
+        <NamedIndividual IRI="#Salak"/>
+        <NamedIndividual IRI="#Manis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Sambal"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Sambal"/>
+        <NamedIndividual IRI="#Manis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Sambal"/>
+        <NamedIndividual IRI="#Pedas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Santan"/>
+        <NamedIndividual IRI="#Abon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Santan"/>
+        <NamedIndividual IRI="#Arem_Arem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Santan"/>
+        <NamedIndividual IRI="#Gudeg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Santan"/>
+        <NamedIndividual IRI="#Lemper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Santan"/>
+        <NamedIndividual IRI="#Ayam_Panggang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Santan"/>
+        <NamedIndividual IRI="#Kue_Pancong"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Santan"/>
+        <NamedIndividual IRI="#Kari_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Santan"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Santan"/>
+        <NamedIndividual IRI="#Sayur_Tempe_Tahu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Sate_Ayam"/>
+        <NamedIndividual IRI="#Kertas_Minyak_Makanan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Sate_Ayam"/>
+        <NamedIndividual IRI="#Sterofoam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Sate_Ayam"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Sate_Ayam"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Sate_Kambing"/>
+        <NamedIndividual IRI="#Kertas_Minyak_Makanan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Sate_Kambing"/>
+        <NamedIndividual IRI="#Sterofoam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Sate_Kambing"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Sate_Kambing"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Saus_Bistik"/>
+        <NamedIndividual IRI="#Bistik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Saus_Inggris"/>
+        <NamedIndividual IRI="#Saus_Bistik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Saus_Sambal"/>
+        <NamedIndividual IRI="#Jamur_Crispy_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Saus_Tiram"/>
+        <NamedIndividual IRI="#Capcay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Saus_Tiram"/>
+        <NamedIndividual IRI="#Tumis_Tempe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Sawi_Putih"/>
+        <NamedIndividual IRI="#Capcay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Sayur_Tempe_Tahu"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Sayur_Tempe_Tahu"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Sayur_Tempe_Tahu"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Buah"/>
+        <NamedIndividual IRI="#Semangka"/>
+        <NamedIndividual IRI="#Kotak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Buah"/>
+        <NamedIndividual IRI="#Semangka"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Buah"/>
+        <NamedIndividual IRI="#Semangka"/>
+        <NamedIndividual IRI="#Manis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Serai"/>
+        <NamedIndividual IRI="#Abon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Serai"/>
+        <NamedIndividual IRI="#Ayam_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Serai"/>
+        <NamedIndividual IRI="#Arem_Arem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Serai"/>
+        <NamedIndividual IRI="#Gudeg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Serai"/>
+        <NamedIndividual IRI="#Lemper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Serai"/>
+        <NamedIndividual IRI="#Ayam_Panggang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Minuman"/>
+        <NamedIndividual IRI="#Sirup"/>
+        <NamedIndividual IRI="#Botol_Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Minuman"/>
+        <NamedIndividual IRI="#Sirup"/>
+        <NamedIndividual IRI="#Manis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Sosis"/>
+        <NamedIndividual IRI="#Risoles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Sosis"/>
+        <NamedIndividual IRI="#Bihun_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Minuman"/>
+        <NamedIndividual IRI="#Susu"/>
+        <NamedIndividual IRI="#Botol_Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Minuman"/>
+        <NamedIndividual IRI="#Susu"/>
+        <NamedIndividual IRI="#Manis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Susu_Sapi"/>
+        <NamedIndividual IRI="#Risoles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Susu_Sapi"/>
+        <NamedIndividual IRI="#Kue_Brownies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Tahu"/>
+        <NamedIndividual IRI="#Risoles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Tahu"/>
+        <NamedIndividual IRI="#Tahu_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Tahu"/>
+        <NamedIndividual IRI="#Sayur_Tempe_Tahu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Tahu"/>
+        <NamedIndividual IRI="#Tahu_Bakso"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Tahu_Bakso"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Tahu_Bakso"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Tahu_Bakso"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Tahu_Goreng"/>
+        <NamedIndividual IRI="#Kotak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Tahu_Goreng"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Tahu_Goreng"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiCampur"/>
+        <NamedIndividual IRI="#Tauge"/>
+        <NamedIndividual IRI="#Lotek"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Minuman"/>
+        <NamedIndividual IRI="#Teh"/>
+        <NamedIndividual IRI="#Botol_Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Minuman"/>
+        <NamedIndividual IRI="#Teh"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Minuman"/>
+        <NamedIndividual IRI="#Teh"/>
+        <NamedIndividual IRI="#Manis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Minuman"/>
+        <NamedIndividual IRI="#Teh"/>
+        <NamedIndividual IRI="#Pahit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Telur_Ayam"/>
+        <NamedIndividual IRI="#Martabak_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Telur_Ayam"/>
+        <NamedIndividual IRI="#Nasi_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Telur_Ayam"/>
+        <NamedIndividual IRI="#Risoles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Telur_Ayam"/>
+        <NamedIndividual IRI="#Telur_Dadar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Telur_Ayam"/>
+        <NamedIndividual IRI="#Kue_Brownies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Telur_Ayam"/>
+        <NamedIndividual IRI="#Kue_Pancong"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Telur_Ayam"/>
+        <NamedIndividual IRI="#Telur_Ayam_Rebus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Telur_Ayam"/>
+        <NamedIndividual IRI="#Bihun_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Telur_Ayam"/>
+        <NamedIndividual IRI="#Bubur_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Telur_Ayam_Rebus"/>
+        <NamedIndividual IRI="#Gudeg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Telur_Dadar"/>
+        <NamedIndividual IRI="#Kotak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Telur_Dadar"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Telur_Dadar"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Tempe"/>
+        <NamedIndividual IRI="#Tempe_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Tempe"/>
+        <NamedIndividual IRI="#Sayur_Tempe_Tahu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Tempe"/>
+        <NamedIndividual IRI="#Tumis_Tempe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Tempe_Goreng"/>
+        <NamedIndividual IRI="#Kotak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Tempe_Goreng"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Tempe_Goreng"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Tepung_Beras"/>
+        <NamedIndividual IRI="#Kue_Pancong"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Tepung_Maizena"/>
+        <NamedIndividual IRI="#Capcay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Tepung_Tapioka"/>
+        <NamedIndividual IRI="#Kerupuk_Udang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Tepung_Tapioka"/>
+        <NamedIndividual IRI="#Tahu_Bakso"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Tepung_Terigu"/>
+        <NamedIndividual IRI="#Jamur_Crispy_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Tepung_Terigu"/>
+        <NamedIndividual IRI="#Martabak_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Tepung_Terigu"/>
+        <NamedIndividual IRI="#Risoles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <NamedIndividual IRI="#Tepung_Terigu"/>
+        <NamedIndividual IRI="#Kue_Brownies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Terasi"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Terasi"/>
+        <NamedIndividual IRI="#Sayur_Tempe_Tahu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Terong"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Tomat"/>
+        <NamedIndividual IRI="#Sayur_Tempe_Tahu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Tomat"/>
+        <NamedIndividual IRI="#Sate_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas"/>
+        <NamedIndividual IRI="#Tumis_Kacang_Panjang"/>
+        <NamedIndividual IRI="#Kotak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas"/>
+        <NamedIndividual IRI="#Tumis_Kacang_Panjang"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa"/>
+        <NamedIndividual IRI="#Tumis_Kacang_Panjang"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa"/>
+        <NamedIndividual IRI="#Tumis_Kacang_Panjang"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Tumis_Tempe"/>
+        <NamedIndividual IRI="#Kotak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Tumis_Tempe"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Tumis_Tempe"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Tumis_Tempe"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Udang"/>
+        <NamedIndividual IRI="#Udang_Bakar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Udang"/>
+        <NamedIndividual IRI="#Kerupuk_Udang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Udang"/>
+        <NamedIndividual IRI="#Udang_Balado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Udang_Bakar"/>
+        <NamedIndividual IRI="#Kertas_Minyak_Makanan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Udang_Bakar"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Udang_Bakar"/>
+        <NamedIndividual IRI="#Sterofoam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Udang_Bakar"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Udang_Bakar"/>
+        <NamedIndividual IRI="#Manis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Udang_Balado"/>
+        <NamedIndividual IRI="#Kertas_Minyak_Makanan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <NamedIndividual IRI="#Udang_Balado"/>
+        <NamedIndividual IRI="#Plastik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Udang_Balado"/>
+        <NamedIndividual IRI="#Asin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Udang_Balado"/>
+        <NamedIndividual IRI="#Gurih"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <NamedIndividual IRI="#Udang_Balado"/>
+        <NamedIndividual IRI="#Pedas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Wortel"/>
+        <NamedIndividual IRI="#Risoles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Wortel"/>
+        <NamedIndividual IRI="#Arem_Arem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Wortel"/>
+        <NamedIndividual IRI="#Capcay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <NamedIndividual IRI="#Wortel"/>
+        <NamedIndividual IRI="#Bistik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Lada/merica"/>
+        <NamedIndividual IRI="#Sate_Kambing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiBakar"/>
+        <NamedIndividual IRI="#Lada/merica"/>
+        <NamedIndividual IRI="#Udang_Bakar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Lada/merica"/>
+        <NamedIndividual IRI="#Jamur_Crispy_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Lada/merica"/>
+        <NamedIndividual IRI="#Martabak_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Lada/merica"/>
+        <NamedIndividual IRI="#Nasi_Goreng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <NamedIndividual IRI="#Lada/merica"/>
+        <NamedIndividual IRI="#Risoles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Lada/merica"/>
+        <NamedIndividual IRI="#Arem_Arem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiKukus"/>
+        <NamedIndividual IRI="#Lada/merica"/>
+        <NamedIndividual IRI="#Lemper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiRebus"/>
+        <NamedIndividual IRI="#Lada/merica"/>
+        <NamedIndividual IRI="#Tahu_Bakso"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Lada/merica"/>
+        <NamedIndividual IRI="#Bistik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Lada/merica"/>
+        <NamedIndividual IRI="#Bumbu_Kacang_Sate_Ayam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Lada/merica"/>
+        <NamedIndividual IRI="#Capcay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Lada/merica"/>
+        <NamedIndividual IRI="#Saus_Bistik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Lada/merica"/>
+        <NamedIndividual IRI="#Tumis_Kacang_Panjang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DiTumis"/>
+        <NamedIndividual IRI="#Lada/merica"/>
+        <NamedIndividual IRI="#Tumis_Tempe"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Abon"/>
+        <Literal>Suhu Ruangan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Air_Mineral"/>
+        <Literal>Suhu Ruangan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Arem_Arem"/>
+        <Literal>Suhu Ruangan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Ayam_Bakar"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Ayam_Goreng"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Ayam_Panggang"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Bihun_Goreng"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Bistik"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jumlah_Porsi"/>
+        <NamedIndividual IRI="#Bubur_Ayam"/>
+        <Literal>Individu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Bubur_Ayam"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Bumbu_Kacang_Sate_Ayam"/>
+        <Literal>Suhu Ruangan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Bumbu_Lotek"/>
+        <Literal>Suhu Ruangan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Burger"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Capcay"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Gudeg"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Ikan_Goreng"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jumlah_Porsi"/>
+        <NamedIndividual IRI="#Indomie_Goreng"/>
+        <Literal>Individu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Indomie_Goreng"/>
+        <Literal>Panas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jumlah_Porsi"/>
+        <NamedIndividual IRI="#Indomie_Rebus"/>
+        <Literal>Individu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Indomie_Rebus"/>
+        <Literal>Panas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Jamur_Crispy_Goreng"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Jeruk"/>
+        <Literal>Suhu Ruangan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Kari_Ayam"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Kerupuk_Udang"/>
+        <Literal>Suhu Ruangan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Kopi"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Kue_Brownies"/>
+        <Literal>Suhu Ruangan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Kue_Pancong"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Lemper"/>
+        <Literal>Suhu Ruangan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jumlah_Porsi"/>
+        <NamedIndividual IRI="#Lotek"/>
+        <Literal>Individu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Lotek"/>
+        <Literal>Suhu Ruangan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Martabak_Goreng"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Nasi_Goreng"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Pepaya"/>
+        <Literal>Suhu Ruangan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Pisang"/>
+        <Literal>Suhu Ruangan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Risoles"/>
+        <Literal>Suhu Ruangan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Salak"/>
+        <Literal>Suhu Ruangan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Sambal"/>
+        <Literal>Suhu Ruangan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Sate_Ayam"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Sate_Kambing"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Saus_Bistik"/>
+        <Literal>Suhu Ruangan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Sayur_Lodeh"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Sayur_Tempe_Tahu"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Semangka"/>
+        <Literal>Suhu Ruangan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Sirup"/>
+        <Literal>Dingin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Susu"/>
+        <Literal>Dingin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Tahu_Bakso"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Tahu_Goreng"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Teh"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Telur_Ayam_Rebus"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Telur_Dadar"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Tempe_Goreng"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Tumis_Kacang_Panjang"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Tumis_Tempe"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Udang_Bakar"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Temperatur"/>
+        <NamedIndividual IRI="#Udang_Balado"/>
+        <Literal>Hangat</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#DiKemas_Buah"/>
+        <ObjectProperty IRI="#DiKemas"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <ObjectProperty IRI="#DiKemas"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#DiKemas_Minuman"/>
+        <ObjectProperty IRI="#DiKemas"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Memiliki_Rasa_Buah"/>
+        <ObjectProperty IRI="#Memiliki_Rasa"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <ObjectProperty IRI="#Memiliki_Rasa"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Memiliki_Rasa_Minuman"/>
+        <ObjectProperty IRI="#Memiliki_Rasa"/>
+    </SubObjectPropertyOf>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#DiAsap"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#DiBakar"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#DiCampur"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#DiGoreng"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#DiKemas"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#DiKukus"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#DiPanggang"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#DiRebus"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#DiSeduh"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#DiTumis"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#Memiliki_Rasa"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#Microwave"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#DiAsap"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#DiBakar"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#DiCampur"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#DiGoreng"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#DiKemas"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#DiKukus"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#DiPanggang"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#DiRebus"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#DiSeduh"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#DiTumis"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#Memiliki_Rasa"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#Microwave"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DiAsap"/>
+        <Class IRI="#Bahan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DiBakar"/>
+        <Class IRI="#Bahan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DiCampur"/>
+        <Class IRI="#Bahan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <Class IRI="#Bahan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DiKemas"/>
+        <Class IRI="#FoodOntology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DiKemas_Buah"/>
+        <Class IRI="#Buah"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <Class IRI="#Makanan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DiKemas_Minuman"/>
+        <Class IRI="#Minuman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DiKukus"/>
+        <Class IRI="#Bahan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <Class IRI="#Bahan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DiRebus"/>
+        <Class IRI="#Bahan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DiSeduh"/>
+        <Class IRI="#Bahan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DiTumis"/>
+        <Class IRI="#Bahan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Memiliki_Rasa"/>
+        <Class IRI="#FoodOntology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Memiliki_Rasa_Buah"/>
+        <Class IRI="#Buah"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <Class IRI="#Makanan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Memiliki_Rasa_Minuman"/>
+        <Class IRI="#Minuman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Microwave"/>
+        <Class IRI="#Bahan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <Class IRI="#FoodOntology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DiAsap"/>
+        <Class IRI="#Makanan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DiBakar"/>
+        <Class IRI="#Makanan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DiCampur"/>
+        <Class IRI="#Makanan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DiGoreng"/>
+        <Class IRI="#Makanan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DiKemas"/>
+        <Class IRI="#Kemasan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DiKemas_Buah"/>
+        <Class IRI="#Kemasan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DiKemas_Makanan"/>
+        <Class IRI="#Kemasan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DiKemas_Minuman"/>
+        <Class IRI="#Kemasan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DiKukus"/>
+        <Class IRI="#Makanan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DiPanggang"/>
+        <Class IRI="#Makanan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DiRebus"/>
+        <Class IRI="#Makanan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DiSeduh"/>
+        <Class IRI="#Minuman"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DiTumis"/>
+        <Class IRI="#Makanan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Memiliki_Rasa"/>
+        <Class IRI="#Rasa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Memiliki_Rasa_Buah"/>
+        <Class IRI="#Rasa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Memiliki_Rasa_Makanan"/>
+        <Class IRI="#Rasa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Memiliki_Rasa_Minuman"/>
+        <Class IRI="#Rasa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Microwave"/>
+        <Class IRI="#Makanan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Sebagai_Pelengkap"/>
+        <Class IRI="#Makanan"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Jumlah_Porsi"/>
+        <Class IRI="#Makanan"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Kadaluarsa_Dalam_Hari"/>
+        <Class IRI="#Kemasan"/>
+    </DataPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
