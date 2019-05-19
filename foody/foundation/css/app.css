@@ -3967,7 +3967,7 @@ table.hover tr:nth-of-type(even):hover {
   animation-delay: 700ms !important; }
 
 body {
-  background-image: url("../img/bg.png");
+  background-image: url("../img/background.jpg");
   min-height: 100%; }
 
 .top-bar {

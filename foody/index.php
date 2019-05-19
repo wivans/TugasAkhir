@@ -18,7 +18,7 @@
         <div class="top-bar"> 
           <div class="row">
             <div class="large-2 columns large-centered">
-             <h4><strong>Foody</strong></h4>
+             <h4><strong>Foody <a href="query.php">test</a></strong></h4>
             </div>
           </div>
         </div>
@@ -53,14 +53,14 @@
 //}
   ?>
   <div class="row content">
-    <div class="large-8 columns large-centered">
+    <div class="large-6 columns large-centered">
       <div class="callout">
         <h6 class="subheader">PILIH MAKANAN, MINUMAN, dan BUAH</h6>
           <form method="GET" action="#">
             <div class="input-group">
               <select class="input-group-field" name="entity">
                 <?php 
-                  foreach($graph->allOfType('foo:Makanan') as $name) {
+                  foreach($graph->allOfType('foo:Foody') as $name) {
                   echo "<option value='".$name."'>".str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $name->get('rdfs:label'))."</option>";
                 }
                 ?>
@@ -73,8 +73,33 @@
         </div>
       </div>
   </div>
+
+
+  <div class="row content">
+    <div class="large-6 columns large-centered">
+      <div class="callout">
+        <h6 class="subheader">Cek Bahan</h6>
+          <form method="GET" action="#">
+            <div class="input-group">
+              <select class="input-group-field" name="entity">
+                <?php 
+                  foreach($graph->allOfType('foo:Bahan') as $name) {
+                  echo "<option value='".$name."'>".str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $name->get('rdfs:label'))."</option>";
+                }
+                ?>
+              </select>
+              <div class="input-group-button">
+                <input type="submit" class="button" value="Submit">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+  </div>
+
+
   <div class="row">
-    <div class="large-8 columns large-centered">
+    <div class="large-10 columns large-centered">
       <?php 
         if(isset($_GET['entity'])) {
           echo "
@@ -84,7 +109,6 @@
             // Nama Instance
             $ins = $graph->resource($_GET['entity']);
             echo "<h3>".str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $ins->get('rdfs:label'))."</h3><br/>";
-
             echo "<table>";
             echo "<tr>";
 
@@ -130,6 +154,104 @@
               if($ins->get('foo:DiKemas')){
               echo "<tr><td>Kemasan</td><td>";
               foreach ($ins->all('foo:DiKemas') as $subject) {
+                echo '<a href="?entity='.urlencode($subject).'">'.str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $subject->get('rdfs:label'))."</a><br/>";
+              }
+              echo "</td></tr>";  
+            }
+
+
+            //Porsi
+              if($ins->get('foo:Jumlah_Porsi')){
+              echo "<tr><td>Porsi</td><td>";
+              foreach ($ins->all('foo:Jumlah_Porsi') as $subject) {
+                echo '<a href="?entity='.urlencode($subject).'">'.str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $subject)."</a><br/>";
+              }
+              echo "</td></tr>";  
+            }
+
+
+              //kandungan
+              if($ins->get('foo:Mengandung')){
+              echo "<tr><td>kandungan</td><td>";
+              foreach ($ins->all('foo:Mengandung') as $subject) {
+                echo '<a href="?entity='.urlencode($subject).'">'.str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $subject->get('rdfs:label'))."</a><br/>";
+              }
+              echo "</td></tr>";  
+            }
+
+
+              //bahan digoreng
+              if($ins->get('foo:DiGoreng'))
+              {
+              echo "<tr><td>Bisa digunakan untuk (digoreng)</td><td>";
+              foreach ($ins->all('foo:DiGoreng') as $subject) {
+                echo '<a href="?entity='.urlencode($subject).'">'.str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $subject->get('rdfs:label'))."</a><br/>";
+              }
+              echo "</td></tr>";  
+            }
+
+
+              //Bahan DiRebus
+              if($ins->get('foo:DiRebus'))
+              {
+              echo "<tr><td>Bisa digunakan untuk (direbus)</td><td>";
+              foreach ($ins->all('foo:DiRebus') as $subject) {
+                echo '<a href="?entity='.urlencode($subject).'">'.str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $subject->get('rdfs:label'))."</a><br/>";
+              }
+              echo "</td></tr>";  
+            }
+
+
+              //Bahan DiKukus
+              if($ins->get('foo:DiKukus'))
+              {
+              echo "<tr><td>Bisa digunakan untuk (dikukus)</td><td>";
+              foreach ($ins->all('foo:DiKukus') as $subject) {
+                echo '<a href="?entity='.urlencode($subject).'">'.str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $subject->get('rdfs:label'))."</a><br/>";
+              }
+              echo "</td></tr>";  
+            }
+
+
+              //Bahan DiPanggang
+              if($ins->get('foo:DiPanggang'))
+              {
+              echo "<tr><td>Bisa digunakan untuk (dipanggang)</td><td>";
+              foreach ($ins->all('foo:DiPanggang') as $subject) {
+                echo '<a href="?entity='.urlencode($subject).'">'.str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $subject->get('rdfs:label'))."</a><br/>";
+              }
+              echo "</td></tr>";  
+            }
+
+
+              //Bahan DiTumis
+              if($ins->get('foo:DiTumis'))
+              {
+              echo "<tr><td>Bisa digunakan untuk (ditumis)</td><td>";
+              foreach ($ins->all('foo:DiTumis') as $subject) {
+                echo '<a href="?entity='.urlencode($subject).'">'.str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $subject->get('rdfs:label'))."</a><br/>";
+              }
+              echo "</td></tr>";  
+            }
+
+
+            //Bahan DiBakar
+              if($ins->get('foo:DiBakar'))
+              {
+              echo "<tr><td>Bisa digunakan untuk (dibakar)</td><td>";
+              foreach ($ins->all('foo:DiBakar') as $subject) {
+                echo '<a href="?entity='.urlencode($subject).'">'.str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $subject->get('rdfs:label'))."</a><br/>";
+              }
+              echo "</td></tr>";  
+            }
+
+
+
+              //DiAsap
+              if($ins->get('foo:DiAsap'))
+              {
+              echo "<tr><td>Bisa digunakan untuk (diasap)</td><td>";
+              foreach ($ins->all('foo:DiAsap') as $subject) {
                 echo '<a href="?entity='.urlencode($subject).'">'.str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $subject->get('rdfs:label'))."</a><br/>";
               }
               echo "</td></tr>";  
