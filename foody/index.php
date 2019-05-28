@@ -18,7 +18,7 @@
         <div class="top-bar"> 
           <div class="row">
             <div class="large-2 columns large-centered">
-             <h4><strong>Foody <a href="query.php">test</a></strong></h4>
+             <h4><strong>Foody <a href="query.php">test</a><br><a href="form.php">insert</a></strong></h4>
             </div>
           </div>
         </div>

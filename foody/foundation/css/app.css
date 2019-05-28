@@ -1992,7 +1992,7 @@ select {
   padding: 1rem;
   border: 1px solid rgba(10, 10, 10, 0.25);
   border-radius: 0;
-  position: relative;
+  
   color: #0a0a0a;
   background-color: white; }
   .callout > :first-child {
@@ -3983,3 +3983,9 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0; }
+
+
+  #kotak
+  {
+    top: 520px;
+  }
