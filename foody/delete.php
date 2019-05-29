@@ -1,11 +1,11 @@
 <?php
-$kelas = $_POST['kelas'];
-$individu = $_POST['individu'];
+$entity = $_GET['entity'];
+
 
 $count = 3;
-$pass = "['".$kelas."','".$individu."']";
+$pass = "['".$entity."']";
 
-$command = escapeshellcmd("C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python36\\python.exe C:\\xampp\\htdocs\\foody\\insert.py \"$pass\" \"$count\" ");
+$command = escapeshellcmd("C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python36\\python.exe C:\\xampp\\htdocs\\foody\\delete.py \"$pass\" \"$count\" ");
 exec($command, $output);
 
 ?>

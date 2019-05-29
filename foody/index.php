@@ -109,6 +109,7 @@
             // Nama Instance
             $ins = $graph->resource($_GET['entity']);
             echo "<h3>".str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $ins->get('rdfs:label'))."</h3><br/>";
+           // echo '<a href="delete.php?entity='.$entity['entity'].'">Hapus</a>';
             echo "<table>";
             echo "<tr>";
 
@@ -136,6 +137,7 @@
               echo "<tr><td>Rasa</td><td>";
               foreach ($ins->all('foo:Memiliki_Rasa') as $subject) {
                 echo '<a href="?entity='.urlencode($subject).'">'.str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $subject->get('rdfs:label'))."</a><br/>";
+
               }
               echo "</td></tr>";  
             }

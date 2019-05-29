@@ -15,9 +15,9 @@
 <body>
 
   <div class="container">  
-  <form id="contact" action="test.php" method="post">
-    <h3>Bagikan Makanan</h3>
-    <h4>Saya punya makanan untuk dibagikan</h4>
+  <form id="contact" action="insert.php" method="post">
+    <h3>Insert to Ontology</h3>
+
     <fieldset>
       <input placeholder="Kelas" type="text" name="kelas"  tabindex="1" required autofocus>
     </fieldset>
