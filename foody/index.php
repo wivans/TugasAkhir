@@ -18,7 +18,10 @@
         <div class="top-bar"> 
           <div class="row">
             <div class="large-2 columns large-centered">
-             <h4><strong>Foody <a href="query.php">test</a><br><a href="form.php">insert</a></strong></h4>
+             <h4><strong>Foody <br>
+              <a href="query.php">test Query</a> <br>
+              <a href="form.php">Test insert</a>
+              </strong></h4>
             </div>
           </div>
         </div>
@@ -43,14 +46,7 @@
 
   $localhost = "localhost/foody";
 
-  //foreach($graph->allOfType('time:Interval') as $name) {
-                //if (preg_match('/Yankee/i', $book->get('ont:bookHasTitle'))) {
-   // echo "<option value='".$name."'>".$name."</option>";
-          // echo "Start : ".$name->get('time:hasBeginning')->get('time:inDateTime')."<br>";
-          // echo "End : ".$name->get('time:hasEnd')->get('time:inDateTime')."<br>";
-                //}
-  //}
-//}
+
   ?>
   <div class="row content">
     <div class="large-6 columns large-centered">
@@ -109,7 +105,7 @@
             // Nama Instance
             $ins = $graph->resource($_GET['entity']);
             echo "<h3>".str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $ins->get('rdfs:label'))."</h3><br/>";
-           // echo '<a href="delete.php?entity='.$entity['entity'].'">Hapus</a>';
+            echo '<a href="delete.php?entity='.str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $ins->get('foo:Foody')).'">Hapus</a>';
             echo "<table>";
             echo "<tr>";
 

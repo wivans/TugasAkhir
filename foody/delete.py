@@ -18,8 +18,8 @@ OWL.About
 g = Graph()
 g.parse("C:\\xampp\\htdocs\\foody\\foody.rdf")
 
-entity = URIRef("http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#"+entity)
+entiti = URIRef("http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#"+entity)
 
-g.remove( (+entity, None, None) )
+g.remove( (entiti, None, None) )
 
 g.serialize("C:\\xampp\\htdocs\\foody\\foody.rdf")

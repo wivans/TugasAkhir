@@ -19,18 +19,17 @@ OWL.About
 
 
 FOAF.knows
-# = rdflib.term.URIRef(u'http://xmlns.com/foaf/0.1/knows')
 
 g = Graph()
 g.parse("C:\\xampp\\htdocs\\foody\\foody.rdf")
 
 
-kelas = URIRef("http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#"+kelas)
-individu = URIRef("http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#"+individu)
+kelaz = URIRef("http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#"+kelas)
+individual = URIRef("http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#"+individu)
 
 
-g.add( (individu, RDF.type, kelas ) )
+g.add( (individual, RDF.type, kelaz ) )
+#g.add( (individual, RDFS.label, Literal(individu, lang="en") )
 
-# print g.serialize(format='turtle')
 
 g.serialize("C:\\xampp\\htdocs\\foody\\foody.rdf")
