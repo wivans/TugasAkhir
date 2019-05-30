@@ -18,7 +18,7 @@
         <div class="top-bar"> 
           <div class="row">
             <div class="large-2 columns large-centered">
-             <h4><strong>Foody <br>
+             <h4><strong>
               <a href="query.php">test Query</a> <br>
               <a href="form.php">Test insert</a>
               </strong></h4>
@@ -105,7 +105,7 @@
             // Nama Instance
             $ins = $graph->resource($_GET['entity']);
             echo "<h3>".str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $ins->get('rdfs:label'))."</h3><br/>";
-            echo '<a href="delete.php?entity='.str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $ins->get('foo:Foody')).'">Hapus</a>';
+            echo '<a href="delete.php?entity='.str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $ins->get('rdfs:label')).'">Hapus</a>';
             echo "<table>";
             echo "<tr>";
 
