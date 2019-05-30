@@ -31,6 +31,5 @@ individu = URIRef("http://www.semanticweb.org/asus/ontologies/2019/1/untitled-on
 
 g.add( (individu, RDF.type, kelas ) )
 
-# print g.serialize(format='turtle')
 
 g.serialize("C:\\xampp\\htdocs\\foody\\foody.rdf")
