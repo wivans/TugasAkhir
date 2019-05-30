@@ -9,7 +9,5 @@ $command = escapeshellcmd("C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Py
 exec($command, $output);
 
 
-header('Location: index.php');
-
 
 ?>
