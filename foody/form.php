@@ -14,6 +14,8 @@
 
 <body>
 
+<a href="index.php">Back</a>
+
   <div class="container">  
   <form id="contact" action="insert.php" method="post">
     <h3>Insert to Ontology</h3>

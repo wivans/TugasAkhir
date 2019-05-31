@@ -11,6 +11,7 @@
 </head>
 <body>
 <h1>Testing Query</h1>
+<a href="index.php">back</a>
 
 <h2>Contoh Study Kasus</h2>
 <ul>
