@@ -106,6 +106,9 @@
             $ins = $graph->resource($_GET['entity']);
             echo "<h3>".str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $ins->get('rdfs:label'))."</h3><br/>";
             echo '<a href="delete.php?entity='.str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $ins->get('rdfs:label')).'">Hapus</a>';
+            echo '<br>';
+            echo '<br>';
+            echo '<a href="form2.php?entity='.str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $ins->get('rdfs:label')).'">Ubah</a>';
             echo "<table>";
             echo "<tr>";
 
