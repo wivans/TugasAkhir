@@ -6,8 +6,12 @@ import rdflib
 import sys
 import json
 
-kelas = eval(sys.argv[1])[0]
-individu = eval(sys.argv[1])[1]
+
+individu2 = (sys.argv[1])
+individu =  (sys.argv[2])
+
+print(individu)
+print(individu2)
 
 
 RDF.type
@@ -26,11 +30,15 @@ g.parse("C:\\xampp\\htdocs\\foody\\foody.rdf")
 
 
 
-var_individu = URIRef("http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#"+individu)
+var_individu2 = URIRef("http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#"+individu2)
+
+#g.add( (var_individu2, RDFS.label, Literal(individu2, lang="en")) )
+g.add( (var_individu2, RDFS.label, Literal(individu, lang="en")) )
+print(var_individu2)
+#var_individu2 = URIRef("http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#"+individu2)
+#g.set( (var_individu, RDFS.label, Literal(individu, lang="en")) )
 
 
-g.add( (var_individu, RDF.type, var_kelas ) )
-g.add( (var_individu, RDFS.label, Literal(individu, lang="en")) )
 
 # print g.serialize(format='turtle')
 

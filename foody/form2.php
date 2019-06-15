@@ -20,9 +20,9 @@
   <form id="contact" action="update.php" method="post">
     <h3>Updating Ontology</h3>
 
-
     <fieldset>
-      <input placeholder="Individu" type="text" name="individu" tabindex="2"  required>
+      <input placeholder="Individu" type="text" name="individu" tabindex="2" value="<?php echo $_GET['entity'] ?>"  required>
+      <input placeholder="Individu" type="hidden" name="individu2" tabindex="2" value="<?php echo $_GET['entity'] ?>"  required>
     </fieldset>
     <fieldset>
       <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Ubah</button>
