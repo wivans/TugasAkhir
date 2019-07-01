@@ -22,7 +22,7 @@
     <h3>Penambahan Anotasi untuk <?php echo $_GET['entity'] ?></h3>
 
     <fieldset>
-      <input placeholder="Ketik disini" type="text" name="individu" tabindex="2"   required>
+      <input placeholder="Ketik disini" type="text" name="individu" tabindex="2" value="<?php echo $_GET['entity'] ?>"  required>
       <input placeholder="Individu" type="hidden" name="individu2" tabindex="2" value="<?php echo $_GET['entity'] ?>"  required>
     </fieldset>
     <fieldset>

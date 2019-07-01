@@ -12,29 +12,32 @@
 
 </head>
 <body>
-  <h1>Testing Query</h1>
-  <a href="index.php">back</a>
-
-  <h2>Contoh Study Kasus</h2>
-  <ul>
+<div class="header">
+  <a href="#default" class="logo">Selamat Datang di Sistem Foody</a>
+  <div class="header-right">
+    <a class="active" href="index.php">Home</a>
+    <a href="query.php">Studi Kasus</a>
+    <a href="form1.php">Tambah Instance</a>
+  </div>
+</div>
 
     <div class="row content">
-      <div class="large-6 columns large-centered">
+      <div class="large-8 columns large-centered">
         <div class="callout">
           <form method="GET" action="#">
             <div class="dropdown" style="left: 200px">
               <button class="dropbtn">List Query</button>
               <div class="dropdown-content">
-                <a href="#" onclick="query1()">Query 1</a>
-                <a href="#" onclick="query2()">Query 2</a>
-                <a href="#" onclick="query3()">Query 3</a>
-                <a href="#" onclick="query4()">Query 4</a>
-                <a href="#" onclick="query5()">Query 5</a>
-                <a href="#" onclick="query6()">Query 6</a>
-                <a href="#" onclick="query7()">Query 7</a>
-                <a href="#" onclick="query8()">Query 8</a>
-                <a href="#" onclick="query9()">Query 9</a>
-                <a href="#" onclick="query10()">Query 10</a>
+                <a href="#" onclick="query1()">Studi Kasus 1</a>
+                <a href="#" onclick="query2()">Studi Kasus 2</a>
+                <a href="#" onclick="query3()">Studi Kasus 3</a>
+                <a href="#" onclick="query4()">Studi Kasus 4</a>
+                <a href="#" onclick="query5()">Studi Kasus 5</a>
+                <a href="#" onclick="query6()">Studi Kasus 6</a>
+                <a href="#" onclick="query7()">Studi Kasus 7</a>
+                <a href="#" onclick="query8()">Studi Kasus 8</a>
+                <a href="#" onclick="query9()">Studi Kasus 9</a>
+                <a href="#" onclick="query10()">Studi Kasus 10</a>
               </div>
             </div>
           </form>
@@ -42,11 +45,12 @@
       </div>
     </div>
 
-    <div id="ex1" class="modal" style="width: 300px;">
+    <div id="ex1" class="modal" style="width: 500px;">
      <div class="row">
       <div class="large-10 columns large-centered">
       </div>
       <div id="judul" style="left: 1000px"></div>
+      <br>
       <div id="penjelasan" style="left: 1000px"></div>
       <hr>
       <div id="disini" style="left: 1000px"></div>
@@ -73,14 +77,14 @@
       .done(function(res)
       {
         document.getElementById("disini").innerHTML = res;
-        document.getElementById("judul").innerHTML = "ini query1";
+        document.getElementById("judul").innerHTML = "Menampilkan Bahan yang dipakai untuk Makanan dengan cara penyajian di Rebus";
         document.getElementById("penjelasan").innerHTML = `
 
-          SELECT DISTINCT ?name<br/>
-          WHERE {<br/>
+        SELECT DISTINCT ?name<br/>
+        WHERE {<br/>
           &emsp; ?Bahan foo:DiRebus ?Makanan.<br/>
           &emsp; ?Bahan rdfs:label ?name .<br/>
-          }
+        }
         `;
         $('#ex1').modal('show');
       });
@@ -99,6 +103,16 @@
       .done(function(res)
       {
         document.getElementById("disini").innerHTML = res;
+        document.getElementById("judul").innerHTML = "Menampilkan Makanan yang dikemas menggunakan Daun Pisang";
+        document.getElementById("penjelasan").innerHTML = `
+
+        SELECT DISTINCT ?nama<br/>
+        WHERE {<br/>
+        &emsp;  ?Makanan foo:DiKemas ?Kemasan.<br/>
+        &emsp;  ?Makanan foo:DiKemas foo:Daun_Pisang.<br/>
+        &emsp;  ?Makanan rdfs:label ?nama.<br/>
+        }
+        `;
         $('#ex1').modal('show');
       });
 
@@ -114,6 +128,16 @@
       .done(function(res)
       {
         document.getElementById("disini").innerHTML = res;
+        document.getElementById("judul").innerHTML = "Menampilkan Makanan yang memiliki rasa yang pedas";
+        document.getElementById("penjelasan").innerHTML = `
+
+        SELECT DISTINCT ?nama<br/>
+        WHERE {<br/>
+        &emsp;  ?Makanan foo:Memiliki_Rasa ?Rasa.<br/>
+        &emsp;  ?Makanan foo:Memiliki_Rasa foo:Pedas.<br/>
+        &emsp;  ?Makanan rdfs:label ?nama.<br/>
+        }
+        `;
         $('#ex1').modal('show');
       });
 
@@ -129,6 +153,16 @@
       .done(function(res)
       {
         document.getElementById("disini").innerHTML = res;
+        document.getElementById("judul").innerHTML = "Menampilkan Bahan yang digunakan sebagai pelengkap dari suatu makanan beserta nama makanan terkait";
+        document.getElementById("penjelasan").innerHTML = `
+
+        SELECT DISTINCT ?nama1 ?nama2<br/>
+        WHERE {<br/>
+        &emsp;  ?Bahan foo:Sebagai_Pelengkap ?Makanan;<br/>
+        &emsp; &emsp; &emsp;  rdfs:label ?nama1.<br/>
+        &emsp;  ?Makanan rdfs:label ?nama2.<br/>
+        }
+        `;
         $('#ex1').modal('show');
       });
 
@@ -144,6 +178,20 @@
       .done(function(res)
       {
         document.getElementById("disini").innerHTML = res;
+        document.getElementById("judul").innerHTML = "Menampilkan makanan, minuman, dan buah yang memiliki rasa manis";
+        document.getElementById("penjelasan").innerHTML = `
+
+        SELECT DISTINCT  ?nama1<br/>
+        WHERE {<br/>
+        &emsp;  ?Makanan foo:Memiliki_Rasa ?Rasa.<br/>
+        &emsp;  ?Makanan foo:Memiliki_Rasa foo:Manis.<br/>
+        &emsp;  ?Buah foo:Memiliki_Rasa ?Rasa.<br/>
+        &emsp;  ?Buah foo:Memiliki_Rasa foo:Manis.<br/>
+        &emsp;  ?Minuman foo:Memiliki_Rasa foo:Manis.<br/>
+        &emsp;  ?Minuman foo:Memiliki_Rasa foo:Manis;<br/>
+        &emsp; &emsp; &emsp;  rdfs:label ?nama1.<br/>
+        }
+        `;
         $('#ex1').modal('show');
       });
 
@@ -159,6 +207,17 @@
       .done(function(res)
       {
         document.getElementById("disini").innerHTML = res;
+        document.getElementById("judul").innerHTML = "Menampilkan Bahan yang bila dipanggang akan menghasilkan makanan yang memiliki rasa gurih";
+        document.getElementById("penjelasan").innerHTML = `
+
+        SELECT DISTINCT ?nama1<br/>
+        WHERE {<br/>
+        &emsp;  ?Bahan foo:DiPanggang ?Makanan.<br/>
+        &emsp;  ?Makanan foo:Memiliki_Rasa ?Rasa.<br/>
+        &emsp;  ?Makanan foo:Memiliki_Rasa foo:Gurih.<br/>
+        &emsp;  ?Bahan rdfs:label ?nama1.<br/>
+        }
+        `;
         $('#ex1').modal('show');
       });
 
@@ -174,6 +233,16 @@
       .done(function(res)
       {
         document.getElementById("disini").innerHTML = res;
+        document.getElementById("judul").innerHTML = "Menampilkan Kemasan yang digunakan untuk sate ayam";
+        document.getElementById("penjelasan").innerHTML = `
+
+        SELECT DISTINCT ?nama<br/>
+        WHERE {<br/>
+        &emsp;  ?Makanan foo:DiKemas ?Kemasan.<br/>
+        &emsp;  foo:Sate_Ayam foo:DiKemas ?Kemasan.<br/>
+        &emsp;  ?Kemasan rdfs:label ?nama.<br/>
+        }
+        `;
         $('#ex1').modal('show');
       });
 
@@ -189,6 +258,16 @@
       .done(function(res)
       {
         document.getElementById("disini").innerHTML = res;
+        document.getElementById("judul").innerHTML = "Menampilkan makanan yang memiliki porsi individu";
+        document.getElementById("penjelasan").innerHTML = `
+
+        SELECT DISTINCT ?nama<br/>
+        WHERE {<br/>
+        &emsp;  ?Makanan foo:Jumlah_Porsi ?jml.<br/>
+        &emsp;  ?Makanan rdfs:label ?nama.<br/>
+        &emsp;  FILTER (?jml='Individu').<br/>
+        }
+        `;
         $('#ex1').modal('show');
       });
 
@@ -204,6 +283,19 @@
       .done(function(res)
       {
         document.getElementById("disini").innerHTML = res;
+        document.getElementById("judul").innerHTML = "Menampilkan Makanan yang memiliki suhu yang panas dan minuman yang memiliki suhu yang dingin";
+        document.getElementById("penjelasan").innerHTML = `
+
+        SELECT DISTINCT ?nama1 ?nama2<br/>
+        WHERE {<br/>
+        &emsp;  ?Makanan foo:Temperatur ?temp;<br/>
+        &emsp; &emsp; &emsp; rdfs:label ?nama1.<br/>
+        &emsp;  FILTER (?temp='Panas').<br/>
+        &emsp;  ?Minuman foo:Temperatur ?temp2;<br/>
+        &emsp; &emsp; &emsp;  rdfs:label ?nama2.<br/>
+        &emsp;  FILTER (?temp2='Dingin').<br/>
+        }
+        `;
         $('#ex1').modal('show');
       });
 
@@ -221,6 +313,16 @@
     .done(function(res)
     {
       document.getElementById("disini").innerHTML = res;
+      document.getElementById("judul").innerHTML = "Menampilkan kandungan bahan pada makanan capcay";
+      document.getElementById("penjelasan").innerHTML = `
+
+      SELECT DISTINCT ?nama<br/>
+      WHERE {<br/>
+      &emsp;  ?Bahan foo:DiTumis ?Makanan.<br/>
+      &emsp;  ?Bahan foo:DiTumis foo:Capcay.<br/>
+      &emsp;  ?Bahan rdfs:label ?nama.<br/>
+      }
+      `;
       $('#ex1').modal('show');
     });
 

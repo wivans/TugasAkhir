@@ -34,7 +34,6 @@ var_individu2 = URIRef("http://www.semanticweb.org/asus/ontologies/2019/1/untitl
 
 #g.add( (var_individu2, RDFS.label, Literal(individu2, lang="en")) )
 g.add( (var_individu2, RDFS.label, Literal(individu, lang="en")) )
-print(var_individu2)
 #var_individu2 = URIRef("http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#"+individu2)
 #g.set( (var_individu, RDFS.label, Literal(individu, lang="en")) )
 

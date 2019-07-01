@@ -12,21 +12,16 @@
   <meta class="foundation-mq">
 </head>
 <body>
-  <div id="wrapper">
-    <div data-sticky-container>
-      <div data-sticky data-margin-top='0' data-top-anchor="top" data-btm-anchor="content:bottom">
-        <div class="top-bar"> 
-          <div class="row">
-            <div class="large-2 columns large-centered">
-             <h4><strong>
-              <a href="query.php">test Query</a> <br>
-              <a href="form.php">Test insert</a>
-              </strong></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
+  <div class="header">
+  <a href="#default" class="logo">Selamat Datang di Sistem Foody</a>
+  <div class="header-right">
+    <a class="active" href="index.php">Home</a>
+    <a href="query.php">Studi Kasus</a>
+    <a href="form1.php">Tambah Instance</a>
+  </div>
+</div>
+  
 
   <br><br>
 
@@ -58,7 +53,9 @@
                 <?php 
                   foreach($graph->allOfType('foo:Foody') as $name) {
                   echo "<option value='".$name."'>".str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $name->get('rdfs:label'))."</option>";
+                  echo $name;
                 }
+
                 ?>
               </select>
               <div class="input-group-button">
@@ -107,7 +104,8 @@
             echo "<h3>".str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $ins->get('rdfs:label'))."</h3><br/>";
             echo '<a href="delete.php?entity='.str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $ins->get('rdfs:label')).'">Hapus</a>';
             echo '<br>';
-            echo '<a href="form2.php?entity='.str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $ins->get('rdfs:label')).'">Tambah Anotasi</a>';
+           // echo '<a href="form2.php?entity='.str_replace('http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#', "", $ins->get('rdfs:label')).'">Tambah Anotasi</a>';
+            echo '<br>';
             echo "<table>";
             echo "<tr>";
 
