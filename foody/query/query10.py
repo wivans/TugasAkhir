@@ -12,11 +12,12 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX foo: <http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#>
 SELECT DISTINCT ?nama
-WHERE {
-	?Bahan foo:DiTumis ?Makanan.
-	?Bahan foo:DiTumis foo:Capcay.
-	?Bahan rdfs:label ?nama.
-       }""")
+  WHERE { 
+         ?Minuman foo:Memiliki_Rasa ?Rasa.
+         ?Minuman foo:Memiliki_Rasa  foo:Manis.
+         ?Minuman rdfs:label ?nama.
+         ?Minuman rdf:type foo:Minuman.
+        }""")
 
 
 for row in qres:

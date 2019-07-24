@@ -1,18 +1,4 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
- 
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY foo "http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY label "http://purl.org/net/vocab/2004/03/label#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-
-]>
-
-
 <rdf:RDF xmlns="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#"
      xml:base="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -20,8 +6,28 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:untitled-ontology-49="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     
 
 
@@ -43,7 +49,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DiAsap</rdfs:label>
+        <rdfs:label>DiAsap</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -55,7 +61,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DiBakar</rdfs:label>
+        <rdfs:label>DiBakar</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -67,7 +73,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DiCampur</rdfs:label>
+        <rdfs:label>DiCampur</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -79,7 +85,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DiGoreng</rdfs:label>
+        <rdfs:label>DiGoreng</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -89,10 +95,9 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#DiKemas">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kemasan"/>
-        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Memiliki_Rasa"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DiKemas</rdfs:label>
+        <rdfs:label>DiKemas</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -104,7 +109,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DiKukus</rdfs:label>
+        <rdfs:label>DiKukus</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -116,7 +121,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DiPanggang</rdfs:label>
+        <rdfs:label>DiPanggang</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -128,7 +133,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DiRebus</rdfs:label>
+        <rdfs:label>DiRebus</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -140,7 +145,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Minuman"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DiSeduh</rdfs:label>
+        <rdfs:label>DiSeduh</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -152,7 +157,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DiTumis</rdfs:label>
+        <rdfs:label>DiTumis</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -174,9 +179,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Memiliki_Rasa">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Rasa"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Memiliki Rasa</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -199,7 +203,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microwave</rdfs:label>
+        <rdfs:label>Microwave</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -211,7 +215,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sebagai Pelengkap</rdfs:label>
+        <rdfs:label>Sebagai Pelengkap</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -230,8 +234,8 @@
     <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Jumlah_Porsi -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Jumlah_Porsi">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jumlah Porsi</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
+        <rdfs:label>Jumlah Porsi</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -240,15 +244,8 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kadaluarsa_Dalam_Hari">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kemasan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kadaluarsa Dalam Hari</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Nama -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Nama">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Minuman"/>
+        <rdfs:label>Kadaluarsa Dalam Hari</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -256,8 +253,9 @@
     <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Temperatur -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Temperatur">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suhu</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temperatur</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
+        <rdfs:label>Suhu</rdfs:label>
+        <rdfs:label>Temperatur</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -278,7 +276,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bahan</rdfs:label>
+        <rdfs:label>Bahan</rdfs:label>
     </owl:Class>
     
 
@@ -289,7 +287,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Minuman"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Buah</rdfs:label>
+        <rdfs:label>Buah</rdfs:label>
     </owl:Class>
     
 
@@ -312,7 +310,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kemasan">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kemasan</rdfs:label>
+        <rdfs:label>Kemasan</rdfs:label>
     </owl:Class>
     
 
@@ -330,7 +328,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Minuman"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Makanan</rdfs:label>
+        <rdfs:label>Makanan</rdfs:label>
     </owl:Class>
     
 
@@ -339,7 +337,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Minuman">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minuman</rdfs:label>
+        <rdfs:label>Minuman</rdfs:label>
     </owl:Class>
     
 
@@ -348,7 +346,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Rasa">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rasa</rdfs:label>
+        <rdfs:label>Rasa</rdfs:label>
     </owl:Class>
     
 
@@ -371,7 +369,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik_Kemasan"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Merah"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Daging_Sapi"/>
@@ -385,7 +384,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Santan"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Serai"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suhu Ruangan</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abon</rdfs:label>
+        <rdfs:label>Abon</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -407,8 +406,7 @@
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Saus_Bistik"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Kacang_Panjang"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Tempe"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aer</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Air</rdfs:label>
+        <rdfs:label>Air</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -419,11 +417,9 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Minuman"/>
-        <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Botol_Plastik"/>
-        <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gelas_Plastik"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tawar"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suhu Ruangan</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Air Mineral</rdfs:label>
+        <rdfs:label>Air Mineral</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -433,7 +429,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Aluminium_Foil">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kemasan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aluminium Foil</rdfs:label>
+        <rdfs:label>Aluminium Foil</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -445,6 +441,9 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Daun_Pisang"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Merah"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Beras"/>
@@ -461,8 +460,9 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Serai"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Wortel"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lada/merica"/>
+        <Jumlah_Porsi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individu</Jumlah_Porsi>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suhu Ruangan</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arem-Arem</rdfs:label>
+        <rdfs:label>Arem-Arem</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -472,7 +472,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asam">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Rasa"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asam</rdfs:label>
+        <rdfs:label>Asam</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -482,7 +482,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Rasa"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asin</rdfs:label>
+        <rdfs:label>Asin</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -496,6 +496,7 @@
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik_Kemasan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sterofoam"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Merah"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Daging_Ayam"/>
@@ -503,7 +504,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kecap_Manis"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Mentega"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ayam Bakar</rdfs:label>
+        <rdfs:label>Ayam Bakar</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -518,7 +519,6 @@
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik_Kemasan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sterofoam"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Daging_Ayam"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Daun_Jeruk"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Daun_Salam"/>
@@ -529,7 +529,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Minyak_Goreng"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Serai"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ayam Goreng</rdfs:label>
+        <rdfs:label>Ayam Goreng</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -543,7 +543,7 @@
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Aluminium_Foil"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik_Kemasan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sterofoam"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Daging_Ayam"/>
@@ -556,7 +556,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Santan"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Serai"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ayam Panggang</rdfs:label>
+        <rdfs:label>Ayam Panggang</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -568,7 +568,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Jamur_Crispy_Goreng"/>
         <DiPanggang rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kue_Brownies"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baking Powder</rdfs:label>
+        <rdfs:label>Baking Powder</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -580,7 +580,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bubur_Ayam"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lotek"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bawang Goreng</rdfs:label>
+        <rdfs:label>Bawang Goreng</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -609,7 +609,7 @@
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Udang_Balado"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sate_Ayam"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sate_Kambing"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bawang Merah</rdfs:label>
+        <rdfs:label>Bawang Merah</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -642,7 +642,7 @@
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Kacang_Panjang"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Tempe"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Udang_Balado"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bawang Putih</rdfs:label>
+        <rdfs:label>Bawang Putih</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -653,8 +653,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiCampur rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lotek"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bayam</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bayem</rdfs:label>
+        <rdfs:label>Bayam</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -666,7 +665,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Arem_Arem"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bubur_Ayam"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beras</rdfs:label>
+        <rdfs:label>Beras</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -677,7 +676,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lemper"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beras Ketan</rdfs:label>
+        <rdfs:label>Beras Ketan</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -688,7 +687,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bihun_Goreng"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bihun</rdfs:label>
+        <rdfs:label>Bihun</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -701,7 +700,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kertas_Minyak_Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sterofoam"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Merah"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
@@ -713,7 +712,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sosis"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Telur_Ayam"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bihun Goreng</rdfs:label>
+        <rdfs:label>Bihun Goreng</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -726,7 +725,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik_Kemasan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sterofoam"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Daging_Sapi"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Garam"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kacang_Panjang"/>
@@ -735,17 +735,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Wortel"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lada/merica"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bistik</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Botol_Kaca -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Botol_Kaca">
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kemasan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Botol Kaca</rdfs:label>
+        <rdfs:label>Bistik</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -755,7 +745,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Botol_Plastik">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kemasan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Botol Plastik</rdfs:label>
+        <rdfs:label>Botol Plastik</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -766,7 +756,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Capcay"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brokoli</rdfs:label>
+        <rdfs:label>Brokoli</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -776,7 +766,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bubuk_Kaldu_Ayam">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bubuk Kaldu Ayam</rdfs:label>
+        <rdfs:label>Bubuk Kaldu Ayam</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -787,7 +777,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiSeduh rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kopi"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bubuk Kopi</rdfs:label>
+        <rdfs:label>Bubuk Kopi</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -798,7 +788,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiSeduh rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Teh"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bubuk Teh</rdfs:label>
+        <rdfs:label>Bubuk Teh</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -824,8 +814,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Telur_Ayam"/>
         <Jumlah_Porsi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individu</Jumlah_Porsi>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bubur</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bubur Ayam</rdfs:label>
+        <rdfs:label>Bubur Ayam</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -836,6 +825,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Air"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Merah"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
@@ -848,7 +839,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lada/merica"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sate_Ayam"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suhu Ruangan</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bumbu Kacang Sate Ayam</rdfs:label>
+        <rdfs:label>Bumbu Kacang Sate Ayam</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -863,7 +854,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kacang_Tanah"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lotek"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suhu Ruangan</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bumbu Lotek</rdfs:label>
+        <rdfs:label>Bumbu Lotek</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -873,7 +864,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bunga_Kol">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bunga Kol</rdfs:label>
+        <rdfs:label>Bunga Kol</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -886,9 +877,9 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sterofoam"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Jumlah_Porsi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individu</Jumlah_Porsi>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Burger</rdfs:label>
+        <rdfs:label>Burger</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -898,8 +889,10 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Cabai_Hijau">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Lodeh"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cabai Hijau</rdfs:label>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
+        <rdfs:label>Cabai Hijau</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -909,13 +902,15 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Cabai_Merah">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Nasi_Goreng"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Tempe_Tahu"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bumbu_Kacang_Sate_Ayam"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sambal"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Kacang_Panjang"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Udang_Balado"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cabai Merah</rdfs:label>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
+        <rdfs:label>Cabai Merah</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -925,10 +920,12 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Cabai_Rawit">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sambal"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Udang_Balado"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sate_Ayam"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cabai Rawit</rdfs:label>
+        <rdfs:label>Cabai Rawit</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -940,7 +937,9 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Air"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Brokoli"/>
@@ -955,9 +954,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Wortel"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lada/merica"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cap Chay</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Capcay</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Capchay</rdfs:label>
+        <rdfs:label>Capchay</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -967,7 +964,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Cengkeh">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cengkeh</rdfs:label>
+        <rdfs:label>Cengkeh</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -978,7 +975,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiPanggang rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kue_Brownies"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coklat Batang</rdfs:label>
+        <rdfs:label>Coklat Batang</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -989,7 +986,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiPanggang rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kue_Brownies"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coklat Bubuk</rdfs:label>
+        <rdfs:label>Coklat Bubuk</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1008,7 +1005,7 @@
         <DiPanggang rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Ayam_Panggang"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kari_Ayam"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bubur_Ayam"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daging Ayam</rdfs:label>
+        <rdfs:label>Daging Ayam</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1019,7 +1016,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Ikan_Goreng"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daging Ikan</rdfs:label>
+        <rdfs:label>Daging Ikan</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1030,7 +1027,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiBakar rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sate_Kambing"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daging Kambing</rdfs:label>
+        <rdfs:label>Daging Kambing</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1045,7 +1042,7 @@
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Arem_Arem"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tahu_Bakso"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bistik"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daging Sapi</rdfs:label>
+        <rdfs:label>Daging Sapi</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1062,7 +1059,7 @@
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Saus_Bistik"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Tempe"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bubur_Ayam"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daun Bawang</rdfs:label>
+        <rdfs:label>Daun Bawang</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1073,7 +1070,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gudeg"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daun Jati</rdfs:label>
+        <rdfs:label>Daun Jati</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1087,7 +1084,7 @@
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Ayam_Goreng"/>
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Arem_Arem"/>
         <DiPanggang rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Ayam_Panggang"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daun Jeruk</rdfs:label>
+        <rdfs:label>Daun Jeruk</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1097,8 +1094,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Daun_Kemangi">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daun Kemangi</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kemangi</rdfs:label>
+        <rdfs:label>Daun Kemangi</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1109,7 +1105,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Lodeh"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daun Melinjo</rdfs:label>
+        <rdfs:label>Daun Melinjo</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1120,8 +1116,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lemper"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daun Pandan</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pandan</rdfs:label>
+        <rdfs:label>Daun Pandan</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1131,7 +1126,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Daun_Pisang">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kemasan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daun Pisang</rdfs:label>
+        <rdfs:label>Daun Pisang</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1150,8 +1145,7 @@
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kari_Ayam"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Lodeh"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Kacang_Panjang"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daun Salam</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salam</rdfs:label>
+        <rdfs:label>Daun Salam</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1162,8 +1156,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bubur_Ayam"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daun Seledri</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Seledri</rdfs:label>
+        <rdfs:label>Daun Seledri</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1173,6 +1166,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Garam">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <DiBakar rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Ayam_Bakar"/>
         <DiBakar rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Udang_Bakar"/>
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Jamur_Crispy_Goreng"/>
@@ -1195,8 +1189,8 @@
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Kacang_Panjang"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Tempe"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Udang_Balado"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Garam</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Garem</rdfs:label>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
+        <rdfs:label>Garam</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1206,7 +1200,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gelas_Plastik">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kemasan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gelas Plastik</rdfs:label>
+        <rdfs:label>Gelas Plastik</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1219,6 +1213,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kertas_Minyak_Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sterofoam"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Air"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Merah"/>
@@ -1236,7 +1231,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Serai"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Telur_Ayam_Rebus"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gudeg</rdfs:label>
+        <rdfs:label>Gudeg</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1246,11 +1241,11 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gula_Merah">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Abon"/>
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gudeg"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Udang_Balado"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gula Aren</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gula Jawa</rdfs:label>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
         <rdfs:label>Gula Merah</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1261,6 +1256,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gula_Pasir">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Arem_Arem"/>
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kerupuk_Udang"/>
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lemper"/>
@@ -1270,18 +1266,8 @@
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Tempe_Tahu"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Capcay"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Kacang_Panjang"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gula Pasir</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gula Rafinasi</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih">
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Rasa"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gurih</rdfs:label>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
+        <rdfs:label>Gula Pasir</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1294,11 +1280,11 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik_Kemasan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sterofoam"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Daging_Ikan"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Minyak_Goreng"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ikan Goreng</rdfs:label>
+        <rdfs:label>Ikan Goreng</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1310,8 +1296,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Indomie_Goreng"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Indomie_Rebus"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indomie</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Instan</rdfs:label>
+        <rdfs:label>Mie Instan</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1324,10 +1309,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik_Kemasan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sterofoam"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Indomie"/>
         <Jumlah_Porsi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individu</Jumlah_Porsi>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indomie Goreng</rdfs:label>
+        <rdfs:label>Indomie Goreng</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1340,12 +1325,11 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kotak"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Indomie"/>
         <Jumlah_Porsi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individu</Jumlah_Porsi>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Panas</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indomie Rebus</rdfs:label>
+        <rdfs:label>Indomie Rebus</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1358,7 +1342,7 @@
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Abon"/>
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Ayam_Goreng"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Udang_Balado"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jahe</rdfs:label>
+        <rdfs:label>Jahe</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1368,7 +1352,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Jalan">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lokasi"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jalan</rdfs:label>
+        <rdfs:label>Jalan</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1379,7 +1363,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Jamur_Crispy_Goreng"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jamur</rdfs:label>
+        <rdfs:label>Jamur</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1393,6 +1377,7 @@
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kertas_Minyak_Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sterofoam"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Baking_Powder"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Garam"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Jamur"/>
@@ -1401,7 +1386,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tepung_Terigu"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lada/merica"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jamur Crispy Goreng</rdfs:label>
+        <rdfs:label>Jamur Crispy Goreng</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1417,7 +1402,7 @@
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asam"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suhu Ruangan</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeruk</rdfs:label>
+        <rdfs:label>Jeruk</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1427,8 +1412,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Jeruk_Lemon">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeruk Lemon</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lemon</rdfs:label>
+        <rdfs:label>Jeruk Lemon</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1441,7 +1425,7 @@
         <DiBakar rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Udang_Bakar"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Udang_Balado"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sate_Kambing"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeruk Nipis</rdfs:label>
+        <rdfs:label>Jeruk Nipis</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1451,7 +1435,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Jinten">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jinten</rdfs:label>
+        <rdfs:label>Jinten</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1461,7 +1445,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kabupaten">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lokasi"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kabupaten</rdfs:label>
+        <rdfs:label>Kabupaten</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1475,7 +1459,7 @@
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Lodeh"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Kacang_Panjang"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bistik"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kacang Panjang</rdfs:label>
+        <rdfs:label>Kacang Panjang</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1487,7 +1471,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiCampur rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bumbu_Lotek"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bumbu_Kacang_Sate_Ayam"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kacang Tanah</rdfs:label>
+        <rdfs:label>Kacang Tanah</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1498,7 +1482,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bubur_Ayam"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kaldu Ayam</rdfs:label>
+        <rdfs:label>Kaldu Ayam</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1509,8 +1493,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiCampur rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lotek"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kangkung</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sayur Kangkung</rdfs:label>
+        <rdfs:label>Kangkung</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1520,7 +1503,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kapulaga">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kapulaga</rdfs:label>
+        <rdfs:label>Kapulaga</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1533,14 +1516,13 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Merah"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Daging_Ayam"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Daun_Salam"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Santan"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kari Ayam</rdfs:label>
+        <rdfs:label>Kari Ayam</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1551,7 +1533,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bubur_Ayam"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kayu Manis</rdfs:label>
+        <rdfs:label>Kayu Manis</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1561,7 +1543,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kecamatan">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lokasi"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kecamatan</rdfs:label>
+        <rdfs:label>Kecamatan</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1572,7 +1554,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bubur_Ayam"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kecap Asin</rdfs:label>
+        <rdfs:label>Kecap Asin</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1583,7 +1565,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Saus_Bistik"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kecap Inggris</rdfs:label>
+        <rdfs:label>Kecap Inggris</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1605,7 +1587,7 @@
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Kacang_Panjang"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Tempe"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sate_Kambing"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kecap Manis</rdfs:label>
+        <rdfs:label>Kecap Manis</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1615,7 +1597,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Keju">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Keju</rdfs:label>
+        <rdfs:label>Keju</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1626,7 +1608,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiPanggang rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kue_Pancong"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kelapa Parut</rdfs:label>
+        <rdfs:label>Kelapa Parut</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1636,7 +1618,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kelurahan">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lokasi"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kelurahan</rdfs:label>
+        <rdfs:label>Kelurahan</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1652,7 +1634,7 @@
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Lodeh"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bihun_Goreng"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bumbu_Kacang_Sate_Ayam"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kemiri</rdfs:label>
+        <rdfs:label>Kemiri</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1663,7 +1645,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Lodeh"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kencur</rdfs:label>
+        <rdfs:label>Kencur</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1675,7 +1657,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Risoles"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bistik"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kentang</rdfs:label>
+        <rdfs:label>Kentang</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1685,7 +1667,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kertas_Minyak_Makanan">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kemasan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kertas Minyak Makanan</rdfs:label>
+        <rdfs:label>Kertas Minyak Makanan</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1695,7 +1677,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kerupuk">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kerupuk</rdfs:label>
+        <rdfs:label>Kerupuk</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1708,13 +1690,15 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik_Kemasan"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gula_Pasir"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Minyak_Goreng"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tepung_Tapioka"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Udang"/>
+        <Jumlah_Porsi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individu</Jumlah_Porsi>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suhu Ruangan</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kerupuk Udang</rdfs:label>
+        <rdfs:label>Kerupuk Udang</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1732,7 +1716,7 @@
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lemper"/>
         <DiPanggang rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Ayam_Panggang"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Lodeh"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ketumbar</rdfs:label>
+        <rdfs:label>Ketumbar</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1746,8 +1730,7 @@
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Arem_Arem"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bihun_Goreng"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Capcay"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kembang Kol</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kol</rdfs:label>
+        <rdfs:label>Kembang Kol</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1758,13 +1741,13 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Minuman"/>
-        <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pahit"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Air"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bubuk_Kopi"/>
+        <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gula_Pasir"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kopi</rdfs:label>
+        <rdfs:label>Kopi</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1774,7 +1757,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kotak">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kemasan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kotak</rdfs:label>
+        <rdfs:label>Kotak</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1787,6 +1770,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kotak"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Baking_Powder"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Coklat_Batang"/>
@@ -1798,7 +1782,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Telur_Ayam"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tepung_Terigu"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suhu Ruangan</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kue Brownies</rdfs:label>
+        <rdfs:label>Kue Brownies</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1810,6 +1794,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kertas_Minyak_Makanan"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Garam"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gula_Pasir"/>
@@ -1818,8 +1803,9 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Santan"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Telur_Ayam"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tepung_Beras"/>
+        <Jumlah_Porsi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individu</Jumlah_Porsi>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kue Pancong</rdfs:label>
+        <rdfs:label>Kue Pancong</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1829,7 +1815,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kuning_Telur">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kuning Telur</rdfs:label>
+        <rdfs:label>Kuning Telur</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1841,7 +1827,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Ayam_Goreng"/>
         <DiPanggang rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Ayam_Panggang"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kunyit</rdfs:label>
+        <rdfs:label>Kunyit</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1853,7 +1839,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiCampur rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lotek"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Lodeh"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Labu Siam</rdfs:label>
+        <rdfs:label>Labu Siam</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1864,7 +1850,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lemper"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laos</rdfs:label>
+        <rdfs:label>Laos</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1876,8 +1862,9 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Daun_Pisang"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Merah"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Beras_Ketan"/>
@@ -1892,9 +1879,9 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Santan"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Serai"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lada/merica"/>
+        <Jumlah_Porsi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individu</Jumlah_Porsi>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suhu Ruangan</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lemper</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lemper Ayam</rdfs:label>
+        <rdfs:label>Lemper Ayam</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1909,7 +1896,7 @@
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gudeg"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Lodeh"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Kacang_Panjang"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lengkuas</rdfs:label>
+        <rdfs:label>Lengkuas</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1919,7 +1906,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lontong">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lontong</rdfs:label>
+        <rdfs:label>Lontong</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1932,7 +1919,6 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kertas_Minyak_Makanan"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Goreng"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bayam"/>
@@ -1944,7 +1930,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tauge"/>
         <Jumlah_Porsi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individu</Jumlah_Porsi>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suhu Ruangan</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lotek</rdfs:label>
+        <rdfs:label>Lotek</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1955,7 +1941,6 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdfs:comment>MSG</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micin</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1965,7 +1950,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Madu">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Madu</rdfs:label>
+        <rdfs:label>Madu</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1975,7 +1960,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Rasa"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manis</rdfs:label>
+        <rdfs:label>Manis</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1989,7 +1974,7 @@
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kertas_Minyak_Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kotak"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Air"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Merah"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
@@ -2000,8 +1985,9 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Telur_Ayam"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tepung_Terigu"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lada/merica"/>
+        <Jumlah_Porsi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tidak Individu</Jumlah_Porsi>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Martabak Goreng</rdfs:label>
+        <rdfs:label>Martabak Goreng</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2012,8 +1998,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Risoles"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mayo</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mayonaise</rdfs:label>
+        <rdfs:label>Mayonaise</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2030,8 +2015,7 @@
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bistik"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Capcay"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Saus_Bistik"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Margarin</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mentega</rdfs:label>
+        <rdfs:label>Mentega</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2041,17 +2025,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Mie">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Mika -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Mika">
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kemasan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mika</rdfs:label>
+        <rdfs:label>Mie</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2076,7 +2050,7 @@
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sambal"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Kacang_Panjang"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Tempe"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minyak Goreng</rdfs:label>
+        <rdfs:label>Minyak Goreng</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2086,7 +2060,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Minyak_Sayur">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minyak Sayur</rdfs:label>
+        <rdfs:label>Minyak Sayur</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2096,7 +2070,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Nangka">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nangka</rdfs:label>
+        <rdfs:label>Nangka</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2108,7 +2082,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gudeg"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Lodeh"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nangka Muda</rdfs:label>
+        <rdfs:label>Nangka Muda</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2119,7 +2093,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Nasi_Goreng"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nasi</rdfs:label>
+        <rdfs:label>Nasi</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2133,7 +2107,7 @@
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kertas_Minyak_Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sterofoam"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Merah"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Cabai_Merah"/>
@@ -2146,7 +2120,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Telur_Ayam"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lada/merica"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nasi Goreng</rdfs:label>
+        <rdfs:label>Nasi Goreng</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2156,7 +2130,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pahit">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Rasa"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pahit</rdfs:label>
+        <rdfs:label>Pahit</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2167,7 +2141,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Saus_Bistik"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pala Bubuk</rdfs:label>
+        <rdfs:label>Pala Bubuk</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2177,7 +2151,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Rasa"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pedas</rdfs:label>
+        <rdfs:label>Pedas</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2192,17 +2166,7 @@
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suhu Ruangan</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pepaya</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Piring -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Piring">
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kemasan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Piring</rdfs:label>
+        <rdfs:label>Pepaya</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2217,7 +2181,7 @@
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suhu Ruangan</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pisang</rdfs:label>
+        <rdfs:label>Pisang</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2227,7 +2191,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kemasan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plastik</rdfs:label>
+        <rdfs:label>Plastik</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2237,7 +2201,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik_Kemasan">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kemasan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plastik Kemasan</rdfs:label>
+        <rdfs:label>Plastik Kemasan</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2247,7 +2211,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Putih_Telur_Ayam">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Putih Telur Ayam</rdfs:label>
+        <rdfs:label>Putih Telur Ayam</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2261,7 +2225,7 @@
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kotak"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Garam"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kentang"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Mayonaise"/>
@@ -2273,8 +2237,9 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tepung_Terigu"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Wortel"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lada/merica"/>
+        <Jumlah_Porsi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individu</Jumlah_Porsi>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suhu Ruangan</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Risoles</rdfs:label>
+        <rdfs:label>Risoles</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2284,7 +2249,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Royco">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Royco</rdfs:label>
+        <rdfs:label>Royco</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2299,7 +2264,7 @@
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suhu Ruangan</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salak</rdfs:label>
+        <rdfs:label>Salak</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2317,8 +2282,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Cabai_Rawit"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Minyak_Goreng"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suhu Ruangan</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sambal</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sambel</rdfs:label>
+        <rdfs:label>Sambal</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2337,7 +2301,7 @@
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kari_Ayam"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Lodeh"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Tempe_Tahu"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Santan</rdfs:label>
+        <rdfs:label>Santan</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2351,7 +2315,7 @@
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kertas_Minyak_Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sterofoam"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Merah"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bumbu_Kacang_Sate_Ayam"/>
@@ -2360,8 +2324,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kecap_Manis"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tomat"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Satay Ayam</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sate Ayam</rdfs:label>
+        <rdfs:label>Sate Ayam</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2375,7 +2338,7 @@
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kertas_Minyak_Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sterofoam"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Merah"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Daging_Kambing"/>
@@ -2384,8 +2347,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Ketumbar"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lada/merica"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Satay Kambing</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sate Kambing</rdfs:label>
+        <rdfs:label>Sate Kambing</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2396,6 +2358,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Air"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Merah"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
@@ -2407,8 +2370,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lada/merica"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bistik"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suhu Ruangan</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saos Bistik</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saus Bistik</rdfs:label>
+        <rdfs:label>Saus Bistik</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2419,8 +2381,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Saus_Bistik"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saos Inggris</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saus Inggris</rdfs:label>
+        <rdfs:label>Saus Inggris</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2431,10 +2392,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Jamur_Crispy_Goreng"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sambal</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saos Sambal</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saos Sambel</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saus Sambal</rdfs:label>
+        <rdfs:label>Saus Sambal</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2446,8 +2404,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Capcay"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Tempe"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saos Tiram</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saus Tiram</rdfs:label>
+        <rdfs:label>Saus Tiram</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2458,7 +2415,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Capcay"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sawi Putih</rdfs:label>
+        <rdfs:label>Sawi Putih</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2471,7 +2428,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Merah"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Cabai_Hijau"/>
@@ -2490,7 +2448,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Terasi"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Terong"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sayur Lodeh</rdfs:label>
+        <rdfs:label>Sayur Lodeh</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2503,7 +2461,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Air"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Merah"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
@@ -2516,7 +2475,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Terasi"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tomat"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sayur Tempe Tahu</rdfs:label>
+        <rdfs:label>Sayur Tempe Tahu</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2531,7 +2490,7 @@
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suhu Ruangan</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semangka</rdfs:label>
+        <rdfs:label>Semangka</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2547,8 +2506,7 @@
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gudeg"/>
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lemper"/>
         <DiPanggang rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Ayam_Panggang"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Serai</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sere</rdfs:label>
+        <rdfs:label>Serai</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2559,10 +2517,9 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Minuman"/>
-        <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Botol_Plastik"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dingin</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sirup</rdfs:label>
+        <rdfs:label>Sirup</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2574,7 +2531,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Risoles"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bihun_Goreng"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sosis</rdfs:label>
+        <rdfs:label>Sosis</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2584,7 +2541,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sterofoam">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kemasan"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sterofoam</rdfs:label>
+        <rdfs:label>Sterofoam</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2595,10 +2552,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Minuman"/>
-        <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Botol_Plastik"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
-        <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dingin</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Susu</rdfs:label>
+        <rdfs:label>Susu</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2608,7 +2563,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Susu_Bubuk_Vanilla">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Susu Bubuk Vanilla</rdfs:label>
+        <rdfs:label>Susu Bubuk Vanilla</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2620,7 +2575,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Risoles"/>
         <DiPanggang rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kue_Brownies"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Susu Sapi</rdfs:label>
+        <rdfs:label>Susu Sapi</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2634,7 +2589,7 @@
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tahu_Goreng"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Tempe_Tahu"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tahu_Bakso"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tahu</rdfs:label>
+        <rdfs:label>Tahu</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2647,7 +2602,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Air"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Daging_Sapi"/>
@@ -2656,7 +2611,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tepung_Tapioka"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lada/merica"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tahu Bakso</rdfs:label>
+        <rdfs:label>Tahu Bakso</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2672,8 +2627,9 @@
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Minyak_Goreng"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tahu"/>
+        <Jumlah_Porsi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individu</Jumlah_Porsi>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tahu Goreng</rdfs:label>
+        <rdfs:label>Tahu Goreng</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2684,7 +2640,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiCampur rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lotek"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tauge</rdfs:label>
+        <rdfs:label>Tauge</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2694,7 +2650,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tawar">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Rasa"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tawar</rdfs:label>
+        <rdfs:label>Tawar</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2705,14 +2661,12 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Minuman"/>
-        <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Botol_Plastik"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pahit"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Air"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bubuk_Teh"/>
-        <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teh</rdfs:label>
+        <rdfs:label>Teh</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2731,7 +2685,7 @@
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Telur_Ayam_Rebus"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bihun_Goreng"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bubur_Ayam"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Telur Ayam</rdfs:label>
+        <rdfs:label>Telur Ayam</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2743,8 +2697,9 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Makanan"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gudeg"/>
+        <Jumlah_Porsi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individu</Jumlah_Porsi>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Telur Ayam Rebus</rdfs:label>
+        <rdfs:label>Telur Ayam Rebus</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2754,7 +2709,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Telur_Bebek">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Telur Bebek</rdfs:label>
+        <rdfs:label>Telur Bebek</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2769,7 +2724,7 @@
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Telur Dadar</rdfs:label>
+        <rdfs:label>Telur Dadar</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2782,7 +2737,7 @@
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tempe_Goreng"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Tempe_Tahu"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Tempe"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tempe</rdfs:label>
+        <rdfs:label>Tempe</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2799,7 +2754,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Minyak_Goreng"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tempe"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tempe Goreng</rdfs:label>
+        <rdfs:label>Tempe Goreng</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2810,7 +2765,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiPanggang rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kue_Pancong"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tepung Beras</rdfs:label>
+        <rdfs:label>Tepung Beras</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2821,7 +2776,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Capcay"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tepung Maizena</rdfs:label>
+        <rdfs:label>Tepung Maizena</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2831,7 +2786,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tepung_Panir">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tepung Panir</rdfs:label>
+        <rdfs:label>Tepung Panir</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2843,7 +2798,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kerupuk_Udang"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tahu_Bakso"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tepung Tapioka</rdfs:label>
+        <rdfs:label>Tepung Tapioka</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2857,7 +2812,7 @@
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Martabak_Goreng"/>
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Risoles"/>
         <DiPanggang rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kue_Brownies"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tepung Terigu</rdfs:label>
+        <rdfs:label>Tepung Terigu</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2868,8 +2823,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Lodeh"/>
-        <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Tempe_Tahu"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terasi</rdfs:label>
+        <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Tempe_Tahu"/>
+        <rdfs:label>Terasi</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2880,7 +2835,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Lodeh"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terong</rdfs:label>
+        <rdfs:label>Terong</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2890,7 +2845,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Timun">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Timun</rdfs:label>
+        <rdfs:label>Timun</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2902,7 +2857,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
         <DiRebus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sayur_Tempe_Tahu"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sate_Ayam"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomat</rdfs:label>
+        <rdfs:label>Tomat</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2916,7 +2871,8 @@
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kotak"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Air"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Merah"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
@@ -2929,8 +2885,9 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lengkuas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Minyak_Goreng"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lada/merica"/>
+        <Jumlah_Porsi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tidak Individu</Jumlah_Porsi>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tumis Kacang Panjang</rdfs:label>
+        <rdfs:label>Tumis Kacang Panjang</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2944,7 +2901,7 @@
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kotak"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Air"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Merah"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
@@ -2955,8 +2912,9 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Saus_Tiram"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tempe"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lada/merica"/>
+        <Jumlah_Porsi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tidak Individu</Jumlah_Porsi>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tumis Tempe</rdfs:label>
+        <rdfs:label>Tumis Tempe</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2969,7 +2927,7 @@
         <DiBakar rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Udang_Bakar"/>
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kerupuk_Udang"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Udang_Balado"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Udang</rdfs:label>
+        <rdfs:label>Udang</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2983,7 +2941,7 @@
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kertas_Minyak_Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sterofoam"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Garam"/>
@@ -2992,7 +2950,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Mentega"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Udang"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Udang Bakar</rdfs:label>
+        <rdfs:label>Udang Bakar</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3006,7 +2964,7 @@
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Kertas_Minyak_Makanan"/>
         <DiKemas rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Plastik"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Asin"/>
-        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Gurih"/>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Manis"/>
         <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Merah"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bawang_Putih"/>
@@ -3018,7 +2976,7 @@
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Jeruk_Nipis"/>
         <Mengandung rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Udang"/>
         <Temperatur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hangat</Temperatur>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Udang Balado</rdfs:label>
+        <rdfs:label>Udang Balado</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3028,7 +2986,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Wijen">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wijen</rdfs:label>
+        <rdfs:label>Wijen</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3042,7 +3000,7 @@
         <DiKukus rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Arem_Arem"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Capcay"/>
         <Sebagai_Pelengkap rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bistik"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wortel</rdfs:label>
+        <rdfs:label>Wortel</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3052,6 +3010,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lada/merica">
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#FoodOntology"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
         <DiBakar rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Sate_Kambing"/>
         <DiBakar rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Udang_Bakar"/>
         <DiGoreng rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Jamur_Crispy_Goreng"/>
@@ -3067,9 +3026,8 @@
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Saus_Bistik"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Kacang_Panjang"/>
         <DiTumis rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Tumis_Tempe"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lada</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lada/Merica</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Merica</rdfs:label>
+        <Memiliki_Rasa rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Pedas"/>
+        <rdfs:label>Lada</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
@@ -3086,7 +3044,7 @@
      -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Lokasi">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lokasi</rdfs:label>
+        <rdfs:label>Lokasi</rdfs:label>
     </rdf:Description>
     
 
@@ -3105,6 +3063,109 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Air"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Air_Mineral"/>
         </owl:distinctMembers>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#f">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#b">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rasa</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Foody"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Bahan"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Rasa"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#r"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Mengandung"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#f"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#b"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Memiliki_Rasa"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#b"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#r"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#Memiliki_Rasa"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#f"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-49#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
     </rdf:Description>
 </rdf:RDF>
 
